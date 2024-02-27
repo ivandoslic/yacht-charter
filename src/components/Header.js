@@ -5,6 +5,8 @@ import {
     XMarkIcon,
 } from '@heroicons/react/24/outline'
 import logo from "../images/logo.svg"
+import logoW from "../images/logo-w.svg"
+import { Link } from 'gatsby'
 
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ');
@@ -12,16 +14,31 @@ function classNames(...classes) {
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [headerDarkMode, setHeaderDarkMode] = useState(false);
   const scrollDirection = useScrollDirection();
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      const triggerPosition = 0.5 * window.innerHeight;
+
+      setHeaderDarkMode(scrollPosition > triggerPosition);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <header className={`sticky ${ scrollDirection === "down" ? "-top-24" : "top-0"} h-24 transition-all duration-500`}>
-        <nav className="flex w-full items-center justify-between p-6 bg-white lg:bg-transparent" aria-label="Global">
+    <header className={`sticky ${scrollDirection === "down" ? "-top-24" : "top-0"} z-10 h-24 transition-all duration-500 bg-${headerDarkMode ? 'white' : 'transparent'}`}>
+        <nav className={`flex w-full items-center justify-between p-6`} aria-label="Global">
         <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
+          <Link to="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
-            <img className="h-12 white w-auto" src={logo} alt="" />
-          </a>
+            <img className={`h-12 white w-auto`} src={!headerDarkMode ? logoW : logo} alt="" />
+          </Link>
         </div>
         <div className="flex lg:hidden">
           <button
@@ -34,32 +51,32 @@ export default function Header() {
           </button>
         </div>
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
-          <a href="#" className="text-sm font-semibold leading-6 text-white">
+          <Link to="/" className={`font-semibold leading-6 ${headerDarkMode ? 'text-black' : 'text-white'}`}>
             Home
-          </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-white">
+          </Link>
+          <Link to="/about" className={`font-semibold leading-6 ${headerDarkMode ? 'text-black' : 'text-white'}`}>
             About us
-          </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-white">
+          </Link>
+          <Link to="/yachts" className={`font-semibold leading-6 ${headerDarkMode ? 'text-black' : 'text-white'}`}>
             Yachts
-          </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-white">
+          </Link>
+          <Link to="/contact" className={`font-semibold leading-6 ${headerDarkMode ? 'text-black' : 'text-white'}`}>
             Contact
-          </a>
+          </Link>
         </Popover.Group>
       </nav>
       <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
         <div className="fixed inset-0 z-10" />
         <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
-            <a href="#" className="-m-1.5 p-1.5">
+            <Link to="/" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
               <img
                 className="h-12 w-auto"
                 src={logo}
                 alt=""
               />
-            </a>
+            </Link>
             <button
               type="button"
               className="-m-2.5 rounded-md p-2.5 text-gray-700"
@@ -72,30 +89,30 @@ export default function Header() {
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                <Link
+                  to="/"
+                  className={`-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 ${headerDarkMode ? 'text-black' : 'text-gray-900'} hover:bg-gray-50`}
                 >
                   Home
-                </a>
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                </Link>
+                <Link
+                  to="/about"
+                  className={`-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 ${headerDarkMode ? 'text-black' : 'text-gray-900'} hover:bg-gray-50`}
                 >
                   About us
-                </a>
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                </Link>
+                <Link
+                  to="/yachts"
+                  className={`-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 ${headerDarkMode ? 'text-black' : 'text-gray-900'} hover:bg-gray-50`}
                 >
                   Yachts
-                </a>
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                </Link>
+                <Link
+                  to="/contact"
+                  className={`-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 ${headerDarkMode ? 'text-black' : 'text-gray-900'} hover:bg-gray-50`}
                 >
                   Contact
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -114,7 +131,7 @@ function useScrollDirection() {
       const updateScrollDirection = () => {
         const scrollY = window.scrollY;
         const direction = scrollY > lastScrollY ? "down" : "up";
-        if(direction !== scrollDirection && (scrollY - lastScrollY > 10 || scrollY - lastScrollY < -10)) {
+        if(direction !== scrollDirection && (scrollY - lastScrollY > 5 || scrollY - lastScrollY < -5)) {
             setScrollDirection(direction);
         }
         lastScrollY = scrollY > 0 ? scrollY : 0;
