@@ -1,11 +1,20 @@
 import * as React from "react"
 import Layout from "../components/layout"
 import Search from "../components/Search"
-import TextInput from "../components/TextInput"
 import backgroundImage from "../images/home-background.jpg"
 import { ArrowDownCircleIcon } from "@heroicons/react/20/solid"
 
 const IndexPage = () => {
+  const scrollToNextSection = () => {
+    // Calculate the next scroll position by adding the current scroll position and the viewport height
+    const nextScrollPosition = window.pageYOffset + window.innerHeight
+    // Scroll the page to the calculated position
+    window.scrollTo({
+      top: nextScrollPosition,
+      behavior: "smooth" // Add smooth scrolling behavior
+    })
+  }
+
   return (
     <Layout>
       <div class="w-full top-0" style={{height: "100vh", top: 0}}>
@@ -17,13 +26,16 @@ const IndexPage = () => {
         <div class="w-full">
           <div class="w-full flex" style={{height: "70vh"}}>
             <div class="container mx-auto py-12 h-full flex-col" style={{width: "55%"}}>
-              <h1 class="text-5xl mx-3 lg:text-8xl font-extrabold text-left text-white lg:mx-8 shadow-outline">Enjoy Croatia in<br />the best yachts</h1>
+              <h1 class="text-5xl mx-3 lg:text-8xl font-extrabold text-left text-white lg:mx-8 shadow-outline">Enjoy Croatia in the best yachts</h1>
             </div>
             <div class="h-full flex-col" style={{width: "45%"}}>
             </div>
           </div>
           <div class="w-full flex content-center items-center justify-center flex-col">
-            <ArrowDownCircleIcon class="w-12 h-12 arrow-down"/>
+            <ArrowDownCircleIcon 
+              class="w-12 h-12 arrow-down"
+              onClick={scrollToNextSection}
+              />
           </div>
         </div>
       </div>

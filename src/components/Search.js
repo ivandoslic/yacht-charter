@@ -31,6 +31,9 @@ export default function Search() {
                 icon={<InboxIcon class="h-4 w-4 md:h-10 md:w-10"/>}
             />
         </div>
+        <div>
+            SEARCH BUTTON PLACEHOLDER
+        </div>
     </div>
   )
 }
