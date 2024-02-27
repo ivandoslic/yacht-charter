@@ -47,7 +47,7 @@ const IndexPage = () => {
   const shuffledNodes = shuffle(data.allMarkdownRemark.nodes);
 
   return (
-    <Layout>
+    <Layout alwaysDark={false}>
       <div class="w-full top-0" style={{height: "100vh", top: 0}}>
         <img 
           src={backgroundImage}

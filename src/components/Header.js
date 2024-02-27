@@ -12,17 +12,31 @@ function classNames(...classes) {
     return classes.filter(Boolean).join(' ');
 }
 
-export default function Header() {
+export default function Header({ alwaysDark }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [headerDarkMode, setHeaderDarkMode] = useState(false);
   const scrollDirection = useScrollDirection();
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+  useEffect(() => {
+    // Your logic to set headerDarkMode based on scroll position
+    const handleResize = () => {
+      setIsSmallScreen(alwaysDark || window.innerWidth < 1024);
+    };
+
+    handleResize(); // Initial check
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
       const triggerPosition = 0.5 * window.innerHeight;
 
-      setHeaderDarkMode(scrollPosition > triggerPosition);
+      setHeaderDarkMode(alwaysDark || scrollPosition > triggerPosition);
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -32,12 +46,12 @@ export default function Header() {
   }, []);
 
   return (
-    <header className={`sticky ${scrollDirection === "down" ? "-top-24" : "top-0"} z-10 h-24 transition-all duration-500 bg-${headerDarkMode ? 'white' : 'transparent'}`}>
+    <header className={`sticky ${scrollDirection === "down" ? "-top-24" : "top-0"} z-10 h-24 transition-all duration-500 ${headerDarkMode ? 'bg-white lg:bg-white' : 'bg-white lg:bg-transparent'}`}>
         <nav className={`flex w-full items-center justify-between p-6`} aria-label="Global">
         <div className="flex lg:flex-1">
           <Link to="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
-            <img className={`h-12 white w-auto`} src={!headerDarkMode ? logoW : logo} alt="" />
+            <img className={`h-12 w-auto`} src={!isSmallScreen && !headerDarkMode ? logoW : logo} alt="" />
           </Link>
         </div>
         <div className="flex lg:hidden">
@@ -51,16 +65,16 @@ export default function Header() {
           </button>
         </div>
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
-          <Link to="/" className={`font-semibold leading-6 ${headerDarkMode ? 'text-black' : 'text-white'}`}>
+          <Link to="/" className={`font-semibold leading-6 ${alwaysDark || headerDarkMode ? 'text-black' : 'text-white'}`}>
             Home
           </Link>
-          <Link to="/about" className={`font-semibold leading-6 ${headerDarkMode ? 'text-black' : 'text-white'}`}>
+          <Link to="/about" className={`font-semibold leading-6 ${alwaysDark || headerDarkMode ? 'text-black' : 'text-white'}`}>
             About us
           </Link>
-          <Link to="/yachts" className={`font-semibold leading-6 ${headerDarkMode ? 'text-black' : 'text-white'}`}>
+          <Link to="/yachts" className={`font-semibold leading-6 ${alwaysDark || headerDarkMode ? 'text-black' : 'text-white'}`}>
             Yachts
           </Link>
-          <Link to="/contact" className={`font-semibold leading-6 ${headerDarkMode ? 'text-black' : 'text-white'}`}>
+          <Link to="/contact" className={`font-semibold leading-6 ${alwaysDark || headerDarkMode ? 'text-black' : 'text-white'}`}>
             Contact
           </Link>
         </Popover.Group>
@@ -91,7 +105,7 @@ export default function Header() {
               <div className="space-y-2 py-6">
                 <Link
                   to="/"
-                  className={`-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 ${headerDarkMode ? 'text-black' : 'text-gray-900'} hover:bg-gray-50`}
+                  className={`-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 ${alwaysDark || headerDarkMode ? 'text-black' : 'text-gray-900'} hover:bg-gray-50`}
                 >
                   Home
                 </Link>
