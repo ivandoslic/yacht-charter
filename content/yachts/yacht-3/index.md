@@ -1,4 +1,5 @@
 ---
+slug: yacht_2
 name: Yacht 3
 details: NA
 category: Mini cruiser
