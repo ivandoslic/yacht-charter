@@ -1,5 +1,5 @@
 ---
-slug: hello world
+slug: test_yacht
 name: Test
 details: Test
 category: Test
