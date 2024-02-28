@@ -1,4 +1,5 @@
 ---
+slug: yacht_2
 name: Yacht 2
 details: NA
 category: Luxury motor sail
