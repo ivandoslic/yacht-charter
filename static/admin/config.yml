@@ -17,7 +17,7 @@ collections:
     editor:
       preview: false
     fields:
-      - { label: 'URL', name: 'slug', widget: 'string', required: true, regex: ['^[a-zA-Z0-9_-]*$', 'Alphanumeric characters, hyphens, and underscores only.']}
+      - { label: 'URL', name: 'slug', widget: 'string', required: true, pattern: ['^[a-zA-Z0-9_-]*$', 'Alphanumeric characters, hyphens, and underscores only.']}
       - { label: 'Name', name: 'name', widget: 'string' }
       - { label: 'Details', name: 'details', widget: 'string' }
       - { label: 'Category', name: 'category', widget: 'string' }
