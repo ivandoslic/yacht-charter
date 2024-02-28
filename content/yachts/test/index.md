@@ -1,4 +1,5 @@
 ---
+slug: hello world
 name: Test
 details: Test
 category: Test
