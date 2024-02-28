@@ -1,5 +1,5 @@
 ---
-slug: yacht_1
+slug: yacht-1
 name: Yacht 1
 details: NA
 category: Gulet
