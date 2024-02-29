@@ -21,8 +21,8 @@ collections:
       - { label: 'Name', name: 'name', widget: 'string' }
       - { label: 'Details', name: 'details', widget: 'string' }
       - { label: 'Category', name: 'category', widget: 'string' }
-      - { label: "Featured Image", name: "thumbnail", widget: "image", allow_multiple: false }
-      - { label: "Gallery", name: "gallery", widget: "image", allow_multiple: true }
+      - { label: "Featured Image", name: "thumbnail", widget: "image"}
+      - { label: "Gallery", name: "gallery", widget: "image"}
       - { label: "Length", name: "length", widget: "number", value_type: "int" }
       - { label: "Guests", name: "guests", widget: "number", value_type: "int" }
       - { label: "Cabins", name: "cabins", widget: "number", value_type: "int" }
