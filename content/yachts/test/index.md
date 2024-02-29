@@ -4,6 +4,10 @@ name: Test
 details: Test
 category: Test
 thumbnail: home-background-8a505693fa78358f390ad8af08226fc8.jpg
+gallery:
+  - home-background-8a505693fa78358f390ad8af08226fc8.jpg
+  - yacht5.jpg
+  - yacht2.jpg
 length: 10
 guests: 10
 cabins: 10
