@@ -4,10 +4,10 @@ import Search from "../components/Search"
 import YachtCard from "../components/YachtCard"
 import backgroundImage from "../images/home-background.jpg"
 import { ArrowDownCircleIcon } from "@heroicons/react/20/solid"
-import { graphql, useStaticQuery } from "gatsby"
+import { graphql } from "gatsby"
 import { shuffle } from 'lodash'
 
-const IndexPage = () => {
+const IndexPage = ({ data }) => {
   const scrollToNextSection = () => {
     // Calculate the next scroll position by adding the current scroll position and the viewport height
     const nextScrollPosition = window.pageYOffset + window.innerHeight
@@ -17,32 +17,6 @@ const IndexPage = () => {
       behavior: "smooth" // Add smooth scrolling behavior
     })
   }
-
-  const data = useStaticQuery(graphql`
-    query MyQuery {
-      allMarkdownRemark {
-        nodes {
-          frontmatter {
-            name
-            cabins
-            category
-            crew
-            details
-            guests
-            length
-            price
-            title
-            thumbnail {
-              absolutePath
-              size
-              publicURL
-              relativePath
-            }
-          }
-        }
-      }
-    }
-  `)
 
   const shuffledNodes = shuffle(data.allMarkdownRemark.nodes);
 
@@ -97,5 +71,31 @@ export const Head = () => (
       <meta name="keywords" content="Plan Your Journey, yacht charter, gulet charter, sailing vacation, luxury yacht, yacht cruise, charter agency, Greece, Turkey" />
     </>
   )
+
+export const query = graphql`
+  query {
+    allMarkdownRemark {
+      nodes {
+        frontmatter {
+          name
+          cabins
+          category
+          crew
+          details
+          guests
+          length
+          price
+          title
+          thumbnail {
+            absolutePath
+            size
+            publicURL
+            relativePath
+          }
+        }
+      }
+    }
+  }
+`
 
 

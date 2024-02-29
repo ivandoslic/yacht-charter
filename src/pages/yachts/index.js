@@ -1,9 +1,9 @@
 import React from 'react'
-import Layout from '../components/layout'
+import Layout from '../../components/layout'
 import { graphql, useStaticQuery } from 'gatsby'
-import YachtCard from '../components/YachtCard'
-import Dropdown from '../components/Dropdown'
-import TextInput from '../components/TextInput'
+import YachtCard from '../../components/YachtCard'
+import Dropdown from '../../components/Dropdown'
+import TextInput from '../../components/TextInput'
 import { UserIcon, InboxIcon } from '@heroicons/react/24/outline'
 
 export default function Yachts() {
