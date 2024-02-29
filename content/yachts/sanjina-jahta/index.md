@@ -1,6 +1,6 @@
 ---
 slug: sanja-yacht
-name: Sanjina jahta
+name: Nije vise sanjina jahta
 details: nema
 category: Kategorija
 thumbnail: yacht1.jpg
