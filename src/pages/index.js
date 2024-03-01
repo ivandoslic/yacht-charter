@@ -83,6 +83,7 @@ export const query = graphql`
           crew
           details
           guests
+          slug
           length
           price
           title
@@ -97,5 +98,3 @@ export const query = graphql`
     }
   }
 `
-
-

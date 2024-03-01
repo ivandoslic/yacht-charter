@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 
 export default function YachtCard({ node }) {
   const { frontmatter } = node
@@ -6,7 +7,7 @@ export default function YachtCard({ node }) {
   console.log(frontmatter.thumbnail)
 
   return (
-    <div className="max-w-sm md:max-w-md lg:max-w-lg rounded overflow-hidden shadow-lg mx-auto my-4">
+    <Link to={`/yachts/${frontmatter.slug}`} className="max-w-sm md:max-w-md lg:max-w-lg rounded overflow-hidden shadow-lg mx-auto my-4">
       <div className="relative">
         <img
           className="w-full h-48 md:h-56 lg:h-64 object-cover transition-transform duration-300 transform hover:scale-105"
@@ -22,6 +23,6 @@ export default function YachtCard({ node }) {
           <p className="text-sm">Length: {frontmatter.length}</p>
         </div>
       </div>
-    </div>
+    </Link>
   )
 }

@@ -18,6 +18,7 @@ export default function Yachts() {
             crew
             details
             guests
+            slug
             length
             price
             title
