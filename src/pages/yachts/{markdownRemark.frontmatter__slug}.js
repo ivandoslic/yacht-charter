@@ -7,6 +7,9 @@ import BookingForm from '../../components/BookingForm';
 
 export default function YachtSite({ data, children }) {
   const yacht = data.markdownRemark.frontmatter;
+  const description = data.markdownRemark.html;
+
+  console.log(data)
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -70,7 +73,7 @@ export default function YachtSite({ data, children }) {
         </section>
         <div className="my-8">
           <h2 className="text-xl lg:text-2xl font-bold mb-4">Details</h2>
-          <div dangerouslySetInnerHTML={{ __html: yacht.price }} />
+          <div className='markdown-content mx-8' dangerouslySetInnerHTML={{ __html: description }} />
         </div>
         <div className="my-8">
           <h2 className="text-xl lg:text-2xl font-bold mb-4">Book this Yacht</h2>
@@ -102,6 +105,7 @@ export const query = graphql`
           publicURL
         }
       }
+      html
     }
   }
 `
