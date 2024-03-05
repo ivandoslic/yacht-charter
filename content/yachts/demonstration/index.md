@@ -1,6 +1,6 @@
 ---
 slug: demo-yacht
-name: Demonstration
+name: Demonstration edit
 category: Demonstration
 thumbnail: yacht2.jpg
 gallery:
