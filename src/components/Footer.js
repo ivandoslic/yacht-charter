@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-800 text-white py-8">
+    <footer className="bg-[#121212] text-white py-8 px-8">
       <div className="container mx-auto flex flex-col lg:flex-row justify-between items-center">
         <div className="text-center lg:text-left mb-4 lg:mb-0">
           <h4 className="text-lg lg:text-xl font-bold mb-2">About Us</h4>

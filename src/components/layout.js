@@ -6,7 +6,7 @@ export default function Layout({ children, alwaysDark }) {
   return (
     <div style={{ margin: `0 auto`, width: `100%`, padding: `0`}}>
         <Header alwaysDark={alwaysDark}/>
-        <main>{children}</main>
+        <main className='w-full'>{children}</main>
         <Footer />
     </div>
   )

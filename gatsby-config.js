@@ -27,5 +27,17 @@ module.exports = {
       "path": "./content/"
     },
     __key: "content"
+  }, {
+    resolve: 'gatsby-omni-font-loader',
+    options: {
+      enableListener: true,
+      preconnect: ['https://fonts.googleapsi.com', 'https://fonts.gstatic.com'],
+      web: [
+        {
+          name: 'DM Sans',
+          file: 'https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap'
+        }
+      ]
+    }
   }]
 };

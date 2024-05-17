@@ -5,8 +5,7 @@ import { UserIcon, InboxIcon } from '@heroicons/react/24/outline'
 
 export default function Search() {
   return (
-    <div className='mx-8 flex flex-col md:flex-row h-50 md:justify-center'>
-        <div className="flex flex-col md:flex-row items-center">
+    <div className='flex w-full gap-1 md:gap-5 flex-col md:flex-row justify-between'>
         <Dropdown
             placeholder="Select Category"
             options={[
@@ -19,21 +18,17 @@ export default function Search() {
             onSelect={(option) => console.log('Selected option:', option)}
         />
         <TextInput
-            className="mx-8 md:mx-0 mt-2 md:mt-0"
             placeholder="Number of guests"
-            icon={<UserIcon class="h-4 w-4 md:h-10 md:w-10"/>}
+            icon={<UserIcon class="h-4 w-4 md:h-10 md:w-8"/>}
         />
-        </div>
-        <div className="flex flex-col md:flex-row items-center mt-2 md:mt-0">
-            <TextInput
-                className="pl-2 md:pl-0"
-                placeholder="Number of cabins"
-                icon={<InboxIcon class="h-4 w-4 md:h-10 md:w-10"/>}
-            />
-        </div>
-        <div>
-            SEARCH BUTTON PLACEHOLDER
-        </div>
+        <TextInput
+            placeholder="Number of cabins"
+            icon={<InboxIcon class="h-4 w-4 md:h-10 md:w-8"/>}
+        />
+        {/* TODO: Add functionality */}
+        <button className='flex justify-center w-full md:w-1/4 items-center bg-[#121212] text-white md:h-24 mt-2 md:text-xl rounded-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gray-400 sm:leading-6 hover:opacity-[96%]'>
+            Search
+        </button>
     </div>
   )
 }

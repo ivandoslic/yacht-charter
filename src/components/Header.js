@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Dialog, Popover, Transition } from '@headlessui/react'
+import { Dialog, Popover } from '@headlessui/react'
 import {
     Bars3Icon,
     XMarkIcon,
@@ -7,10 +7,6 @@ import {
 import logo from "../images/logo.svg"
 import logoW from "../images/logo-w.svg"
 import { Link } from 'gatsby'
-
-function classNames(...classes) {
-    return classes.filter(Boolean).join(' ');
-}
 
 export default function Header({ alwaysDark }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);

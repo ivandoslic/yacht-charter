@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  font-family: 'DM Sans', sans-serif;
+}
+
 .blurred-background {
     backdrop-filter: blur(1px); /* Adjust the blur radius as needed */
     background-color: rgba(255, 255, 255, 0.5); /* Adjust the background color and opacity as needed */
@@ -40,7 +44,6 @@
 
 
   .markdown-content {
-    font-family: Arial, sans-serif;
     line-height: 1.6;
   }
   
