@@ -50,11 +50,9 @@ export default function BookingForm() {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: new URLSearchParams(formData).toString(),
-      }).then(() => {
-        // handle success
-      }).catch((error) => {
-        alert(error);
-      });
+      })
+      .then(() => console.log("Form successfully submitted"))
+      .catch((error) => alert(error));
     }
   };
 
