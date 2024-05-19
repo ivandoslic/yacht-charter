@@ -58,24 +58,26 @@ export default function Yachts() {
   }
 
   useEffect(() => {
-    const parsedQueryParams = queryString.parse(window.location.search);
-    setQueryParams(parsedQueryParams);
+    if(typeof window !== 'undefined') {
+      const parsedQueryParams = queryString.parse(window.location.search);
+      setQueryParams(parsedQueryParams);
 
-    if (parsedQueryParams.category) {
-      categories.forEach(category => {
-        if(category.value === parsedQueryParams.category)
-          setActiveCategory(category);
-      });
-    }
+      if (parsedQueryParams.category) {
+        categories.forEach(category => {
+          if(category.value === parsedQueryParams.category)
+            setActiveCategory(category);
+        });
+      }
 
-    if (parsedQueryParams.guests) {
-      setNumberOfGuests(parsedQueryParams.guests);
-    }
+      if (parsedQueryParams.guests) {
+        setNumberOfGuests(parsedQueryParams.guests);
+      }
 
-    if (parsedQueryParams.cabins) {
-      setNumberOfCabins(parsedQueryParams.cabins);
+      if (parsedQueryParams.cabins) {
+        setNumberOfCabins(parsedQueryParams.cabins);
+      }
     }
-  }, [window.location]);
+  }, []);
 
   return (
     <Layout alwaysDark={true}>
