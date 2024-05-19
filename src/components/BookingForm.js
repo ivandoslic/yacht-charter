@@ -43,22 +43,13 @@ export default function BookingForm() {
     setErrors(validationErrors);
 
     if (Object.keys(validationErrors).length === 0) {
-      const myForm = e.traget;
-      const formData = new FormData(myForm);
-
-      fetch("/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams(formData).toString(),
-      })
-      .then(() => console.log("Form successfully submitted"))
-      .catch((error) => alert(error));
+      document.getElementById("booking-form").submit();
     }
   };
 
   return (
     <div className="flex justify-center">
-      <form name='full-booking' method='post' netlify-honeypot="bot-field" data-netlify="true" onSubmit={handleSubmit} className="bg-white shadow-md rounded-lg px-8 pt-6 pb-8 mb-4 w-3/4">
+      <form id="booking-form" name='full-booking' method='post' netlify-honeypot="bot-field" data-netlify="true" onSubmit={handleSubmit} className="bg-white shadow-md rounded-lg px-8 pt-6 pb-8 mb-4 w-3/4">
         <input type="hidden" name="bot-field" />
         <input type="hidden" name="form-name" value="full-booking" />
         <div className="mb-4">
