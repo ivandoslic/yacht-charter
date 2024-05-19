@@ -4,8 +4,6 @@ import { Link } from 'gatsby'
 export default function YachtCard({ node }) {
   const { frontmatter } = node
   
-  console.log(frontmatter.thumbnail)
-
   return (
     <Link to={`/yachts/${frontmatter.slug}`} className="max-w-sm md:max-w-md lg:max-w-lg rounded overflow-hidden shadow-lg mx-auto my-4">
       <div className="relative">

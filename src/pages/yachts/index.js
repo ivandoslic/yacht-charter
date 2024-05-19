@@ -1,10 +1,9 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Layout from '../../components/layout'
 import { graphql, useStaticQuery } from 'gatsby'
 import YachtCard from '../../components/YachtCard'
-import Dropdown from '../../components/Dropdown'
-import TextInput from '../../components/TextInput'
-import { UserIcon, InboxIcon } from '@heroicons/react/24/outline'
+import Search from '../../components/Search'
+import queryString from 'query-string'
 
 export default function Yachts() {
   const data = useStaticQuery(graphql`
@@ -34,38 +33,69 @@ export default function Yachts() {
     }
   `)
 
+  const categories = [
+    { value: 'gulet', label: 'Gulet' },
+    { value: 'luxuryMotorSail', label: 'Luxury motor sail' },
+    { value: 'miniCruiser', label: 'Mini cruiser' },
+    { value: 'sailingSuperyacht', label: 'Sailing superyacht' },
+    { value: 'motorYacht', label: 'Motor yacht' },
+  ];
+
+  const [queryParams, setQueryParams] = useState({});
+  const [activeCategory, setActiveCategory] = useState(null);
+  const [numberOfGuests, setNumberOfGuests] = useState(null);
+  const [numberOfCabins, setNumberOfCabins] = useState(null);
+
+  const handleCategoryChange = (category) => {
+    setActiveCategory(category);
+  }
+
+  const resetSelection = () => {
+    console.log(JSON.stringify(activeCategory));
+    setActiveCategory("");
+    setNumberOfGuests(0);
+    setNumberOfCabins(0);
+  }
+
+  useEffect(() => {
+    const parsedQueryParams = queryString.parse(window.location.search);
+    setQueryParams(parsedQueryParams);
+
+    if (parsedQueryParams.category) {
+      categories.forEach(category => {
+        if(category.value === parsedQueryParams.category)
+          setActiveCategory(category);
+      });
+    }
+
+    if (parsedQueryParams.guests) {
+      setNumberOfGuests(parsedQueryParams.guests);
+    }
+
+    if (parsedQueryParams.cabins) {
+      setNumberOfCabins(parsedQueryParams.cabins);
+    }
+  }, [window.location]);
 
   return (
     <Layout alwaysDark={true}>
-        <div className="flex flex-col md:flex-row items-center w-full justify-center">
-            <div className="flex flex-col md:flex-row items-center">
-            <Dropdown
-                placeholder="Select Category"
-                options={[
-                    { value: 'gulet', label: 'Gulet' },
-                    { value: 'luxuryMotorSail', label: 'Luxury motor sail' },
-                    { value: 'miniCruiser', label: 'Mini cruiser' },
-                    { value: 'sailingSuperyacht', label: 'Sailing superyacht' },
-                    { value: 'motorYacht', label: 'Motor yacht' },
-                ]}
-                onSelect={(option) => console.log('Selected option:', option)}
+        <div className="w-full px-8">
+            <Search 
+              onCategoryChange={(category) => handleCategoryChange(category)}
+              onSearchSubmit={() => resetSelection()}
+              searchButtonText='Clear selection'
+              categoryState={activeCategory}
+              setCategoryState={setActiveCategory}
+              guestsState={numberOfGuests}
+              setGuestsState={setNumberOfGuests}
+              cabinsState={numberOfCabins}
+              setCabinsState={setNumberOfCabins}
             />
-            <TextInput
-                className="mx-8 md:mx-0 mt-2 md:mt-0"
-                placeholder="Number of guests"
-                icon={<UserIcon class="h-4 w-4 md:h-10 md:w-10"/>}
-            />
-            </div>
-            <div className="flex flex-col md:flex-row items-center mt-2 md:mt-0">
-                <TextInput
-                    className="pl-2 md:pl-0"
-                    placeholder="Number of cabins"
-                    icon={<InboxIcon class="h-4 w-4 md:h-10 md:w-10"/>}
-                />
-            </div>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-6 lg:gap-8 mt-8">
-            {data.allMarkdownRemark.nodes.map(node => (
+            {data.allMarkdownRemark.nodes.filter(
+              node => (node.frontmatter.category.localeCompare(activeCategory) == 0 || !activeCategory) && node.frontmatter.cabins >= numberOfCabins && node.frontmatter.guests >= numberOfGuests
+            ).map(node => (
                 <YachtCard key={node.frontmatter.name} node={node} />
             ))}
         </div>

@@ -6,7 +6,7 @@ import backgroundImage from "../images/home-background.jpg"
 import ctaImage from "../images/ctaImage.jpg"
 import infoSectionImage from "../images/info-section.jpg"
 import { ArrowDownCircleIcon } from "@heroicons/react/20/solid"
-import { graphql, Link } from "gatsby"
+import { graphql, Link, navigate } from "gatsby"
 import { shuffle } from 'lodash'
 import StatsComponent from "../components/callToActionComponents/StatsComponent"
 import ContactInfoInput from "../components/callToActionComponents/ContactInfoInput"
@@ -25,6 +25,27 @@ const IndexPage = ({ data }) => {
   }
 
   const shuffledNodes = shuffle(data.allMarkdownRemark.nodes);
+
+  const [searchCategory, setSearchCategory] = React.useState("");
+  const [searchGuestNum, setSearchGuestNum] = React.useState(null);
+  const [searchCabinNum, setSearchCabinNum] = React.useState(null);
+
+  const searchForYachts = () => {
+    let queryParams = "";
+    queryParams += searchCategory !== "" ? `category=${encodeURIComponent(searchCategory.value)}&` : "";
+    queryParams += searchGuestNum ? `guests=${encodeURIComponent(searchGuestNum)}&` : "";
+    queryParams += searchCabinNum ? `cabins=${encodeURIComponent(searchCabinNum)}&` : "";
+
+    // Remove the last '&' if queryParams is not empty
+    if (queryParams.length > 0) {
+      queryParams = queryParams.slice(0, -1);
+    } else {
+      // If queryParams is empty, return without navigating
+      return;
+    }
+
+    navigate(`/yachts?${queryParams}`);
+  }
 
   return (
     <Layout alwaysDark={false}>
@@ -55,23 +76,28 @@ const IndexPage = ({ data }) => {
           <div className="w-full bg-[#121212] px-8 py-6 pb-11">
             <h2 className="text-3xl lg:text-5xl font-extrabold text-center mt-10 text-white">Why us?</h2>
             <StatsComponent />
-            { /* TODO: Image call to action */ }
           </div>
           <div className="w-full px-8 py-6 mb-5 mt-6">
             <h2 className="text-3xl lg:text-5xl font-extrabold text-center mb-5">What are you looking for?</h2>
             <p className="text-lg text-center mb-5">We provide you with a lot of different categories of yachts and gulets. If you know what you need you can search for it here.</p>
-            <Search />
+            <Search
+              /* TODO: Implement functionality */
+              onCategoryChange={(category) => setSearchCategory(category)}
+              onSearchSubmit={searchForYachts}
+              categoryState={searchCategory}
+              setCategoryState={setSearchCategory}
+              guestsState={searchGuestNum}
+              setGuestsState={setSearchGuestNum}
+              cabinsState={searchCabinNum}
+              setCabinsState={setSearchCabinNum}
+            />
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-6 lg:gap-8 mt-8 pb-10">
             {
-            
-            shuffledNodes.slice(0, 6).map(node => (
-              <YachtCard key={node.frontmatter.name} node={node} />
+              shuffledNodes.slice(0, 6).map(node => (
+                <YachtCard key={node.frontmatter.name} node={node} />
+                )
               )
-            )
-            
-            // TODO: Filter yachts on selected category
-
             }
           </div>
           <div className="w-full bg-[#121212] px-6 py-10 sm:pl-0">

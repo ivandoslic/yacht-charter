@@ -2,16 +2,13 @@ import React, { useState } from 'react';
 import { Listbox } from '@headlessui/react';
 import { ChevronDownIcon } from '@heroicons/react/20/solid';
 
-export default function Dropdown({ icon, placeholder, options, onSelect }) {
-  const [selectedOption, setSelectedOption] = useState(null);
-
+export default function Dropdown({ icon, placeholder, options, onSelect, selectedOption, setSelectedOption }) {
   return (
     <Listbox value={selectedOption} onChange={setSelectedOption}>
       {({ open }) => (
         <div className="relative mt-2 mx-1 rounded-md shadow-sm md:h-24 md:w-1/4 bg-white">
           <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
             <span className="text-gray-500 sm:text-sm">
-            { /*FIXME: Adjust image size for larger screens */ }
             <ChevronDownIcon className="absolute left-0 inset-y-0 right-0 flex items-center pl-2 h-full w-8 text-gray-400 pointer-events-none" aria-hidden="true" />
             </span>
           </div>
@@ -29,7 +26,7 @@ export default function Dropdown({ icon, placeholder, options, onSelect }) {
                   `${active ? 'bg-[#121212] text-white' : 'text-gray-900'}
                     cursor-default select-none relative py-2 pl-3 pr-9`
                 }
-                onClick={() => onSelect(option)}
+                onClick={() => onSelect(option.value)}
               >
                 {({ selected, active }) => (
                   <>

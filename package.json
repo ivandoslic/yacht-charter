@@ -32,6 +32,7 @@
     "gatsby-transformer-sharp": "^5.13.1",
     "netlify-cms-app": "^2.15.72",
     "postcss": "^8.4.35",
+    "query-string": "^9.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
