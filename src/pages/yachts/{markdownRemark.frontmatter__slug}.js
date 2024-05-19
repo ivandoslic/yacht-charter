@@ -24,7 +24,7 @@ export default function YachtSite({ data, children }) {
   return (
     (
       <Layout alwaysDark={true}>
-        <section className="relative overflow-hidden" style={{ minHeight: "75vh" }}>
+        <section className="relative overflow-hidden min-h-[75vh]">
           <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
             style={{ backgroundImage: `url(${yacht.gallery[currentImageIndex].publicURL})` }}
@@ -46,39 +46,40 @@ export default function YachtSite({ data, children }) {
             </div>
             <div className="absolute top-0 left-0 p-4 text-white">
               <div className="container mx-auto px-4 py-8">
-              <h1 className="text-3xl lg:text-4xl font-bold mb-4">{yacht.name}</h1>
-              <div className="flex items-center mb-4">
-                <TagIcon className="h-6 w-6 lg:h-8 lg:w-8 mr-2" />
-                <p className="text-lg lg:text-xl">{yacht.category}</p>
-              </div>
-              <div className="flex items-center mb-4">
-                <UsersIcon className="h-6 w-6 lg:h-8 lg:w-8 mr-2" />
-                <p className="text-lg lg:text-xl">{yacht.guests} Guests</p>
-              </div>
-              <div className="flex items-center mb-4">
-                <HomeIcon className="h-6 w-6 lg:h-8 lg:w-8 mr-2" />
-                <p className="text-lg lg:text-xl">{yacht.cabins} Cabins</p>
-              </div>
-              <div className="flex items-center mb-4">
-                <UsersIcon className="h-6 w-6 lg:h-8 lg:w-8 mr-2" />
-                <p className="text-lg lg:text-xl">{yacht.crew} Crew</p>
-              </div>
-              <div className="flex items-center">
-                <ChevronUpDownIcon className="h-6 w-6 lg:h-8 lg:w-8 mr-2 rotate-90" />
-                <p className="text-lg lg:text-xl">{yacht.length} M</p>
-              </div>
+                <h1 className="text-2xl lg:text-4xl font-bold mb-4">{yacht.name}</h1>
+                <div className="flex items-center mb-4">
+                  <TagIcon className="h-6 w-6 lg:h-8 lg:w-8 mr-2" />
+                  <p className="text-lg lg:text-xl">{yacht.category}</p>
+                </div>
+                <div className="flex items-center mb-4">
+                  <UsersIcon className="h-6 w-6 lg:h-8 lg:w-8 mr-2" />
+                  <p className="text-lg lg:text-xl">{yacht.guests} Guests</p>
+                </div>
+                <div className="flex items-center mb-4">
+                  <HomeIcon className="h-6 w-6 lg:h-8 lg:w-8 mr-2" />
+                  <p className="text-lg lg:text-xl">{yacht.cabins} Cabins</p>
+                </div>
+                <div className="flex items-center mb-4">
+                  <UsersIcon className="h-6 w-6 lg:h-8 lg:w-8 mr-2" />
+                  <p className="text-lg lg:text-xl">{yacht.crew} Crew</p>
+                </div>
+                <div className="flex items-center">
+                  <ChevronUpDownIcon className="h-6 w-6 lg:h-8 lg:w-8 mr-2 rotate-90" />
+                  <p className="text-lg lg:text-xl">{yacht.length} M</p>
+                </div>
               </div>
             </div>
           </div>
         </section>
-        <div className="my-8">
-          <h2 className="text-xl lg:text-2xl font-bold mb-4">Details</h2>
-          <div className='markdown-content mx-8' dangerouslySetInnerHTML={{ __html: description }} />
+        <div className="py-5 flex flex-col lg:flex-row w-full">
+          <div className="w-full lg:w-[60%] px-4 lg:px-8">
+            <div className="markdown-content" dangerouslySetInnerHTML={{ __html: description }} />
+          </div>
+          <div className="w-full lg:w-[40%] text-center mt-8 lg:mt-0">
+            <h2 className="text-xl lg:text-2xl font-bold mb-4">Book this Yacht</h2>
+            <BookingForm />
+          </div>
         </div>
-        <div className="my-8">
-          <h2 className="text-xl lg:text-2xl font-bold mb-4">Book this Yacht</h2>
-          <BookingForm />
-      </div>
       </Layout> 
     )
   )
