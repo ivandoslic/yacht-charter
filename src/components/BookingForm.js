@@ -43,8 +43,18 @@ export default function BookingForm() {
     setErrors(validationErrors);
 
     if (Object.keys(validationErrors).length === 0) {
-      // Form is valid, proceed with submission
-      console.log(formData);
+      const myForm = e.traget;
+      const formData = new FormData(myForm);
+
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData).toString(),
+      }).then(() => {
+        // handle success
+      }).catch((error) => {
+        alert(error);
+      });
     }
   };
 
