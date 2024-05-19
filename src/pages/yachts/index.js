@@ -4,6 +4,7 @@ import { graphql, useStaticQuery } from 'gatsby'
 import YachtCard from '../../components/YachtCard'
 import Search from '../../components/Search'
 import queryString from 'query-string'
+import NoYachtsMessage from '../../components/NoYachtsMessage'
 
 export default function Yachts() {
   const data = useStaticQuery(graphql`
@@ -81,6 +82,7 @@ export default function Yachts() {
 
   return (
     <Layout alwaysDark={true}>
+        <h2 className="text-3xl lg:text-5xl font-extrabold text-center mb-5">What are you looking for?</h2>
         <div className="w-full px-8">
             <Search 
               onCategoryChange={(category) => handleCategoryChange(category)}
@@ -94,13 +96,24 @@ export default function Yachts() {
               setCabinsState={setNumberOfCabins}
             />
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-6 lg:gap-8 mt-8">
-            {data.allMarkdownRemark.nodes.filter(
-              node => (node.frontmatter.category.localeCompare(activeCategory) == 0 || !activeCategory) && node.frontmatter.cabins >= numberOfCabins && node.frontmatter.guests >= numberOfGuests
-            ).map(node => (
-                <YachtCard key={node.frontmatter.name} node={node} />
-            ))}
-        </div>
+            {(() => {
+                const filteredNodes = data.allMarkdownRemark.nodes.filter(
+                    node => (node.frontmatter.category.localeCompare(activeCategory) == 0 || !activeCategory) && node.frontmatter.cabins >= numberOfCabins && node.frontmatter.guests >= numberOfGuests
+                );
+                if (filteredNodes.length === 0) {
+                    return <NoYachtsMessage />;
+                } else {
+                    return (
+                      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-6 lg:gap-8 mt-8">
+                      {
+                        filteredNodes.map(node => (
+                          <YachtCard key={node.frontmatter.name} node={node} />
+                        ))
+                      }
+                      </div>
+                    )
+                }
+            })()}
     </Layout>
   )
 }
