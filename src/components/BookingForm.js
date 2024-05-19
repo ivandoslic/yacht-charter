@@ -50,7 +50,7 @@ export default function BookingForm() {
 
   return (
     <div className="flex justify-center">
-      <form onSubmit={handleSubmit} className="bg-white shadow-md rounded-lg px-8 pt-6 pb-8 mb-4 w-3/4">
+      <form name='full-booking' netlify onSubmit={handleSubmit} className="bg-white shadow-md rounded-lg px-8 pt-6 pb-8 mb-4 w-3/4">
         <div className="mb-4">
           <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name">
             Name <span className="text-red-500">*</span>
