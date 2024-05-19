@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useMemo, useState } from 'react'
 import Layout from '../../components/layout'
 import { graphql, useStaticQuery } from 'gatsby'
 import YachtCard from '../../components/YachtCard'
@@ -34,15 +34,17 @@ export default function Yachts() {
     }
   `)
 
-  const categories = [
-    { value: 'gulet', label: 'Gulet' },
-    { value: 'luxuryMotorSail', label: 'Luxury motor sail' },
-    { value: 'miniCruiser', label: 'Mini cruiser' },
-    { value: 'sailingSuperyacht', label: 'Sailing superyacht' },
-    { value: 'motorYacht', label: 'Motor yacht' },
-  ];
+  const categories = useMemo(
+    () => [
+        { value: 'gulet', label: 'Gulet' },
+        { value: 'luxuryMotorSail', label: 'Luxury motor sail' },
+        { value: 'miniCruiser', label: 'Mini cruiser' },
+        { value: 'sailingSuperyacht', label: 'Sailing superyacht' },
+        { value: 'motorYacht', label: 'Motor yacht' },
+      ],
+    []
+  );
 
-  const [queryParams, setQueryParams] = useState({});
   const [activeCategory, setActiveCategory] = useState(null);
   const [numberOfGuests, setNumberOfGuests] = useState(null);
   const [numberOfCabins, setNumberOfCabins] = useState(null);
@@ -61,7 +63,6 @@ export default function Yachts() {
   useEffect(() => {
     if(typeof window !== 'undefined') {
       const parsedQueryParams = queryString.parse(window.location.search);
-      setQueryParams(parsedQueryParams);
 
       if (parsedQueryParams.category) {
         categories.forEach(category => {
@@ -78,7 +79,7 @@ export default function Yachts() {
         setNumberOfCabins(parsedQueryParams.cabins);
       }
     }
-  }, []);
+  }, [categories]);
 
   return (
     <Layout alwaysDark={true}>
@@ -98,7 +99,7 @@ export default function Yachts() {
         </div>
             {(() => {
                 const filteredNodes = data.allMarkdownRemark.nodes.filter(
-                    node => (node.frontmatter.category.localeCompare(activeCategory) == 0 || !activeCategory) && node.frontmatter.cabins >= numberOfCabins && node.frontmatter.guests >= numberOfGuests
+                    node => (node.frontmatter.category.localeCompare(activeCategory) === 0 || !activeCategory) && node.frontmatter.cabins >= numberOfCabins && node.frontmatter.guests >= numberOfGuests
                 );
                 if (filteredNodes.length === 0) {
                     return <NoYachtsMessage />;

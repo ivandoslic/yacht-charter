@@ -11,7 +11,7 @@ import { shuffle } from 'lodash'
 import StatsComponent from "../components/callToActionComponents/StatsComponent"
 import ContactInfoInput from "../components/callToActionComponents/ContactInfoInput"
 import CustomTableElement from "../components/callToActionComponents/CustomTableElement"
-import { CheckCircleIcon, FaceSmileIcon, HashtagIcon, KeyIcon, MapPinIcon, UserCircleIcon, UsersIcon } from "@heroicons/react/24/outline"
+import { CheckCircleIcon, FaceSmileIcon, HashtagIcon, MapPinIcon, UsersIcon } from "@heroicons/react/24/outline"
 
 const IndexPage = ({ data }) => {
   const scrollToNextSection = () => {
