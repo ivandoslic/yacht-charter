@@ -77,7 +77,7 @@ export default function YachtSite({ data, children }) {
           </div>
           <div className="w-full lg:w-[40%] text-center mt-8 lg:mt-0">
             <h2 className="text-xl lg:text-2xl font-bold mb-4">Book this Yacht</h2>
-            <BookingForm />
+            <BookingForm selectedYacht={ yacht.name } />
           </div>
         </div>
       </Layout> 

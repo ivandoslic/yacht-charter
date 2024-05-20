@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-export default function BookingForm() {
+export default function BookingForm({ selectedYacht = "Contact site" }) {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -52,6 +52,7 @@ export default function BookingForm() {
       <form id="booking-form" name='full-booking' method='post' netlify-honeypot="bot-field" data-netlify="true" onSubmit={handleSubmit} className="bg-white shadow-md rounded-lg px-8 pt-6 pb-8 mb-4 w-3/4">
         <input type="hidden" name="bot-field" />
         <input type="hidden" name="form-name" value="full-booking" />
+        <input type="hidden" name="selected-yacht" value={selectedYacht} />
         <div className="mb-4">
           <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name">
             Name <span className="text-red-500">*</span>
