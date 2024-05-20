@@ -155,7 +155,7 @@ const IndexPage = ({ data }) => {
                   </button>
                 </Link>
               </div>
-              <div className="w-full flex-wrap sm:w-3/12 flex-1 p-6">
+              <div className="w-full flex flex-wrap justify-center sm:w-3/12 flex-1 p-6">
                 <img 
                   src={infoSectionImage}
                   alt="Photo by ben o'bro: https://unsplash.com/@benobro?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
