@@ -19,7 +19,15 @@ collections:
     fields:
       - { label: 'URL', name: 'slug', widget: 'string', required: true, pattern: ['^[a-zA-Z0-9_-]*$', 'Alphanumeric characters, hyphens, and underscores only.']}
       - { label: 'Name', name: 'name', widget: 'string' }
-      - { label: 'Category', name: 'category', widget: 'string' }
+      - label: 'Category'
+        name: 'category'
+        widget: 'select'
+        options: 
+          - { label: "Gulet", value: "gulet" }
+          - { label: "Luxury Motoryacht", value: "luxuryMotorSail" }
+          - { label: "Mini Cruiser", value: "miniCruiser" }
+          - { label: "Sailing Superyacht", value: "sailingSuperyacht" }
+          - { label: "Motor Yacht", value: "motorYacht" }
       - { label: 'Featured Image', name: 'thumbnail', widget: 'image'}
       - label: 'Gallery'
         name: 'gallery'

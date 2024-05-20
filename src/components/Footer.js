@@ -36,13 +36,13 @@ export default function Footer() {
         </div>
       </div>
       <div className="flex justify-center mt-8">
-        <a href="https://facebook.com" className="text-white mx-2" aria-label="Facebook">
+        <a href="https://www.facebook.com/LetTheHolidayBegin/" className="text-white mx-2" aria-label="Facebook">
           <FaFacebook className="h-6 w-6 hover:text-gray-400" />
         </a>
-        <a href="https://instagram.com" className="text-white mx-2" aria-label="Instagram">
+        <a href="https://www.instagram.com/planyour_journey/" className="text-white mx-2" aria-label="Instagram">
           <FaInstagram className="h-6 w-6 hover:text-gray-400" />
         </a>
-        <a href="https://twitter.com" className="text-white mx-2" aria-label="Twitter">
+        <a href="https://linkedin.com/company/plan-your-journey" className="text-white mx-2" aria-label="Twitter">
           <FaLinkedin className="h-6 w-6 hover:text-gray-400" />
         </a>
       </div>
