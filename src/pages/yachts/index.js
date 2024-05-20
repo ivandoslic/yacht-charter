@@ -135,7 +135,7 @@ export const Head = () => (
         "name": "Our Yachts",
         "description": "Browse our selection of luxurious yachts and gulets available for charter.",
         // TODO: "url": "https://yourwebsite.com/yachts",
-        "numberOfItems": data.allMarkdownRemark.nodes.length(),
+        "numberOfItems": data.allMarkdownRemark.nodes.length,
         "itemListElement": data.allMarkdownRemark.nodes.map((node, index) => ({
           "@type": "ListItem",
           "position": index + 1,
