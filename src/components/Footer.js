@@ -9,8 +9,8 @@ export default function Footer() {
       <div className="container mx-auto flex flex-col lg:flex-row justify-between">
         <div className="text-center lg:text-left mb-4 lg:mb-0 w-full lg:w-1/3">
           <h4 className="text-lg lg:text-xl font-bold mb-2">About Us</h4>
-          <p className="text-base lg:text-lg">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vestibulum, nulla nec viverra vulputate, libero nisl lobortis magna.
+          <p className="text-base lg:text-lg sm:pr-6">
+            Discover unparalleled luxury and adventure with Plan Your Journey. Our expertly curated fleet and personalized service ensure unforgettable experiences in Greece, Turkey, and beyond. Start planning your dream getaway today.
           </p>
         </div>
         <div className="text-center lg:text-left mb-4 lg:mb-0 w-full lg:w-1/3">

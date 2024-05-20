@@ -50,6 +50,7 @@ export default function Yachts() {
 
   const handleCategoryChange = (category) => {
     setActiveCategory(category);
+    console.log(activeCategory);
   }
 
   const resetSelection = () => {
@@ -98,7 +99,7 @@ export default function Yachts() {
         </div>
             {(() => {
                 const filteredNodes = data.allMarkdownRemark.nodes.filter(
-                    node => (node.frontmatter.category.localeCompare(activeCategory) === 0 || !activeCategory) && node.frontmatter.cabins >= numberOfCabins && node.frontmatter.guests >= numberOfGuests && node.frontmatter.slug !== "sample"
+                    node => (!activeCategory || node.frontmatter.category.localeCompare(activeCategory.label) === 0) && node.frontmatter.cabins >= numberOfCabins && node.frontmatter.guests >= numberOfGuests && node.frontmatter.slug !== "sample"
                 );
                 if (filteredNodes.length === 0) {
                     return <NoYachtsMessage />;
