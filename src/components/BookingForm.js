@@ -44,6 +44,7 @@ export default function BookingForm({ selectedYacht = "Contact site" }) {
 
     if (Object.keys(validationErrors).length === 0) {
       document.getElementById("booking-form").submit();
+      document.getElementById("booking-form").reset();
     }
   };
 

@@ -8,9 +8,8 @@ export default function ContactInfoInput() {
 
     if(!textInput || textInput === "") return;
 
-    const form = e.
-
     document.getElementById('email-left-form').submit();
+    document.getElementById('email-left-form').reset();
   }
 
   return (
