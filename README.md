@@ -1,49 +1,64 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby Minimal Starter
-</h1>
+# Yacht Charter App
 
-## 🚀 Quick start
+## Overview
 
-1.  **Create a Gatsby site.**
+The Yacht Charter App is an open-source project designed to facilitate yacht and gulet chartering. Originally created for "Plan Your Journey," this app provides an exceptional platform to explore and book luxurious yachts and gulets.
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+## Features
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+- **Yacht Listings:** Browse a variety of yachts with detailed information on each.
+- **Search and Filter:** Easily find yachts based on categories, number of guests, and number of cabins.
+- **Detailed Yacht Pages:** Each yacht has its own page with comprehensive details and amenities.
+- **Contact Form:** Reach out to the charter agency directly through the contact page.
+- **Booking Form:** Submit booking inquiries for available yachts.
 
-2.  **Start developing.**
+## Technologies Used
 
-    Navigate into your new site’s directory and start it up.
+- **React:** Frontend framework for building user interfaces.
+- **Gatsby:** Static site generator for React.
+- **GraphQL:** Query language for API to fetch data.
+- **Markdown:** Used for storing yacht data.
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+## Getting Started
 
-3.  **Open the code and start customizing!**
+### Prerequisites
 
-    Your site is now running at http://localhost:8000!
+- Node.js
+- npm or yarn
 
-    Edit `src/pages/index.js` to see your site update in real-time!
+### Installation
 
-4.  **Learn more**
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/your-username/yacht-charter-app.git
+   cd yacht-charter-app
+  ```
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Tutorials](https://www.gatsbyjs.com/docs/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Guides](https://www.gatsbyjs.com/docs/how-to/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+2. Install dependencies:
+  ```sh
+   npm install
+   # or
+   yarn install
+  ```
 
-## 🚀 Quick start (Netlify)
+3. Start the development server:
+  ```sh
+   npm develop
+   # or
+   yarn develop
+  ```
 
-Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
+## Usage
 
-[<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-minimal)
+- Modify the yacht data in the `content/yachts` directory by adding or updating Markdown files
+
+- You can also modify and add data when you publish the app to netlify as it has Decap CMS built in for managing yacht data
+
+## License
+
+This project is licensed under the MIT license. See the [LICENSE](LICENSE) file for details.
+
+## Acknowledgements
+
+- Created for "Plan Your Journey"
+- Built with Gatsby
