@@ -118,31 +118,58 @@ export default function Yachts() {
   )
 }
 
-export const Head = () => (
-  <>
-    <title>Our Yachts - Yacht and Gulet Charter</title>
-    <meta name="description" content="Browse our selection of luxurious yachts and gulets available for charter. Plan Your Journey offers a variety of yachts to meet your needs and provide an unforgettable sailing experience." />
-    <meta name="keywords" content="yacht charter, gulet charter, luxury yachts, yacht cruising, Plan Your Journey" />
-    <meta property="og:title" content="Our Yachts - Yacht and Gulet Charter" />
-    <meta property="og:description" content="Discover the luxurious yachts and gulets available for charter at Plan Your Journey. Book your perfect yacht today." />
-    <meta property="og:image" content="https://yourwebsite.com/path-to-an-image.jpg" />
-    {/* TODO: <meta property="og:url" content="https://yourwebsite.com/yachts" /> */}
-    <meta name="twitter:card" content="summary_large_image" />
-    <script type="application/ld+json">
-      {JSON.stringify({
-        "@context": "http://schema.org",
-        "@type": "ItemList",
-        "name": "Our Yachts",
-        "description": "Browse our selection of luxurious yachts and gulets available for charter.",
-        // TODO: "url": "https://yourwebsite.com/yachts",
-        "numberOfItems": data.allMarkdownRemark.nodes.length,
-        "itemListElement": data.allMarkdownRemark.nodes.map((node, index) => ({
-          "@type": "ListItem",
-          "position": index + 1,
-          "url": `https://yourwebsite.com/yachts/${node.frontmatter.slug}`,
-          "name": node.frontmatter.name
-        }))
-      })}
-    </script>
-  </>
-)
+export const Head = () => {
+  const headData = useStaticQuery(graphql`
+    query MyQuery {
+      allMarkdownRemark {
+        nodes {
+          frontmatter {
+            name
+            cabins
+            category
+            crew
+            guests
+            slug
+            length
+            title
+            thumbnail {
+              absolutePath
+              size
+              publicURL
+              relativePath
+            }
+          }
+        }
+      }
+    }
+  `)
+
+  return (
+    <>
+      <title>Our Yachts - Yacht and Gulet Charter</title>
+      <meta name="description" content="Browse our selection of luxurious yachts and gulets available for charter. Plan Your Journey offers a variety of yachts to meet your needs and provide an unforgettable sailing experience." />
+      <meta name="keywords" content="yacht charter, gulet charter, luxury yachts, yacht cruising, Plan Your Journey" />
+      <meta property="og:title" content="Our Yachts - Yacht and Gulet Charter" />
+      <meta property="og:description" content="Discover the luxurious yachts and gulets available for charter at Plan Your Journey. Book your perfect yacht today." />
+      <meta property="og:image" content="https://yourwebsite.com/path-to-an-image.jpg" />
+      {/* TODO: <meta property="og:url" content="https://yourwebsite.com/yachts" /> */}
+      <meta name="twitter:card" content="summary_large_image" />
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "http://schema.org",
+          "@type": "ItemList",
+          "name": "Our Yachts",
+          "description": "Browse our selection of luxurious yachts and gulets available for charter.",
+          // TODO: "url": "https://yourwebsite.com/yachts",
+          "numberOfItems": headData.allMarkdownRemark.nodes.length,
+          "itemListElement": headData.allMarkdownRemark.nodes.map((node, index) => ({
+            "@type": "ListItem",
+            "position": index + 1,
+            "url": `https://yourwebsite.com/yachts/${node.frontmatter.slug}`,
+            "name": node.frontmatter.name
+          }))
+        })}
+      </script>
+    </>
+  )
+}
