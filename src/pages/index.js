@@ -159,7 +159,7 @@ const IndexPage = ({ data }) => {
                 <img 
                   src={infoSectionImage}
                   alt="Photo by ben o'bro: https://unsplash.com/@benobro?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-                  className="h-fit p-4 sm:p-0 rounded-md"
+                  className="p-4 min-h-[40vh] max-h-[50vh] sm:p-0 rounded-md"
                 />
               </div>
             </div>
