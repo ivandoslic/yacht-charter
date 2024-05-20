@@ -54,7 +54,7 @@ const IndexPage = ({ data }) => {
 
   return (
     <Layout alwaysDark={false}>
-      <div class="w-full top-0 text-[#121212]" style={{height: "100vh", top: 0}}>
+      <div class="w-full top-0 text-[#121212] pt-24 -mt-24" style={{height: "100vh", top: 0}}>
         <img 
           src={backgroundImage}
           alt="Photo by Zhanzat Mamytova: https://www.pexels.com/photo/white-speedboat-on-body-of-water-3071018/"
@@ -76,7 +76,7 @@ const IndexPage = ({ data }) => {
           </div>
         </div>
       </div>
-      <div className="w-full -mt-24 bg-gray-100">
+      <div className="w-full bg-gray-100">
         <div className="px-auto">
           <div className="w-full bg-[#121212] px-8 py-6 pb-11">
             <h2 className="text-3xl lg:text-5xl font-extrabold text-center mt-10 text-white">Why us?</h2>
@@ -155,7 +155,7 @@ const IndexPage = ({ data }) => {
                   </button>
                 </Link>
               </div>
-              <div className="w-full sm:w-3/12 flex-1 p-6">
+              <div className="w-full flex-wrap sm:w-3/12 flex-1 p-6">
                 <img 
                   src={infoSectionImage}
                   alt="Photo by ben o'bro: https://unsplash.com/@benobro?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
@@ -164,7 +164,6 @@ const IndexPage = ({ data }) => {
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </Layout>
