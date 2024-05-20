@@ -14,6 +14,19 @@ export default function BookingForm({ selectedYacht = "Contact site" }) {
 
   const [errors, setErrors] = useState({});
 
+  const resetForm = () => {
+    setFormData({
+      name: '',
+      email: '',
+      phone: '',
+      guests: '',
+      startDate: '',
+      endDate: '',
+      message: '',
+      privacyPolicyAccepted: false,
+    });
+  };
+
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
     setFormData((prevState) => ({
@@ -45,6 +58,7 @@ export default function BookingForm({ selectedYacht = "Contact site" }) {
     if (Object.keys(validationErrors).length === 0) {
       document.getElementById("booking-form").submit();
       document.getElementById("booking-form").reset();
+      resetForm();
     }
   };
 

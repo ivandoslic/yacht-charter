@@ -24,3 +24,34 @@ export default function about() {
     </Layout>
   )
 }
+
+export const Head = () => (
+    <>
+        <title>About Us - Plan Your Journey</title>
+        <meta name="description" content="Learn more about Plan Your Journey, a premier charter agency specializing in yacht and gulet cruising. Established in 2018, we offer quality and safety with an experienced crew." />
+        <meta name="keywords" content="About Plan Your Journey, yacht charter, gulet charter, sailing vacations, luxury yachts" />
+        <meta property="og:title" content="About Us - Plan Your Journey" />
+        <meta property="og:description" content="Discover the story behind Plan Your Journey, our mission, and our dedication to providing unforgettable yacht and gulet cruising experiences." />
+        {/*TODO: <meta property="og:url" content="https://yourwebsite.com/about" />*/}
+        <meta name="twitter:card" content="summary_large_image" />
+        <script type="application/ld+json">
+        {JSON.stringify({
+            "@context": "http://schema.org",
+            "@type": "Organization",
+            "name": "Plan Your Journey",
+            // TODO: "url": "https://yourwebsite.com",
+            // TODO: "logo": "https://yourwebsite.com/logo.png",
+            "sameAs": [
+                "https://www.facebook.com/LetTheHolidayBegin/",
+                "https://www.instagram.com/planyour_journey/",
+                "https://linkedin.com/company/plan-your-journey"
+            ],
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+385-91-333-3831",
+                "contactType": "Customer Service"
+            }
+        })}
+        </script>
+    </>
+)

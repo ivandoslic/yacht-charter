@@ -173,13 +173,38 @@ const IndexPage = ({ data }) => {
 
 export default IndexPage
 
+// src/pages/index.js
 export const Head = () => (
-    <>
-      <title>Yacht and Gulet Charter Agency</title>
-      <meta name="description" content="Plan Your Journey, established in 2018, is a premier charter agency specializing in yacht and gulet cruising. With over 20 meticulously maintained yachts, 120 stunning destinations, and a team of 55 experienced crew members, we offer unparalleled luxury and safety. Book your unforgettable sailing vacation with us today!" />
-      <meta name="keywords" content="Plan Your Journey, yacht charter, gulet charter, sailing vacation, luxury yacht, yacht cruise, charter agency, Greece, Turkey" />
-    </>
-  )
+  <>
+    <title>Yacht and Gulet Charter Agency</title>
+    <meta name="description" content="Plan Your Journey, established in 2018, is a premier charter agency specializing in yacht and gulet cruising. With over 20 meticulously maintained yachts, 120 stunning destinations, and a team of 55 experienced crew members, we offer unparalleled luxury and safety. Book your unforgettable sailing vacation with us today!" />
+    <meta name="keywords" content="Plan Your Journey, yacht charter, gulet charter, sailing vacation, luxury yacht, yacht cruise, charter agency, Greece, Turkey" />
+    <meta property="og:title" content="Yacht and Gulet Charter Agency" />
+    <meta property="og:description" content="Plan Your Journey offers the best yacht and gulet cruising experiences. Explore our 20 yachts, 120 destinations, and top-notch service." />
+    <meta property="og:image" content={backgroundImage} />
+    {/*TODO: <meta property="og:url" content="https://yourwebsite.com" />*/}
+    <meta name="twitter:card" content="summary_large_image" />
+    <script type="application/ld+json">
+      {JSON.stringify({
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "name": "Plan Your Journey",
+        "url": "https://www.planyourjourney.hr/",
+        "logo": "https://www.planyourjourney.hr/images/plan-your-journey-logo-white.png",
+        "sameAs": [
+          "https://www.facebook.com/LetTheHolidayBegin/",
+          "https://www.instagram.com/planyour_journey/",
+          "https://linkedin.com/company/plan-your-journey"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+385-91-333-3831",
+          "contactType": "Customer Service"
+        }
+      })}
+    </script>
+  </>
+)
 
 export const query = graphql`
   query {

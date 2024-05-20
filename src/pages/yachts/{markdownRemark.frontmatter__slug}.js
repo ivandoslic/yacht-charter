@@ -83,6 +83,42 @@ export default function YachtSite({ data, children }) {
   )
 }
 
+export const Head = ({ data }) => {
+  const yacht = data.markdownRemark.frontmatter;
+  return (
+    <>
+      <title>{yacht.name} - Yacht Charter</title>
+      <meta name="description" content={`Explore the luxurious ${yacht.name}, a ${yacht.length}m ${yacht.category} accommodating ${yacht.guests} guests with ${yacht.cabins} cabins and a crew of ${yacht.crew}.`} />
+      <meta property="og:title" content={`${yacht.name} - Yacht Charter`} />
+      <meta property="og:description" content={`Discover the luxurious ${yacht.name}, a perfect choice for your next yacht charter.`} />
+      <meta property="og:image" content={yacht.gallery[0].publicURL} />
+      {/*TODO: <meta property="og:url" content={`https://yourwebsite.com/yachts/${yacht.slug}`} /> */}
+      <meta name="twitter:card" content="summary_large_image" />
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "http://schema.org",
+          "@type": "Product",
+          "name": yacht.name,
+          "description": `Explore the luxurious ${yacht.name}, a ${yacht.length}m ${yacht.category} accommodating ${yacht.guests} guests with ${yacht.cabins} cabins and a crew of ${yacht.crew}.`,
+          "image": yacht.gallery.map(image => image.publicURL),
+          "brand": {
+            "@type": "Brand",
+            "name": "Plan Your Journey"
+          },
+          "offers": {
+            "@type": "Offer",
+            // TODO: "url": `https://yourwebsite.com/yachts/${yacht.slug}`,
+            "priceCurrency": "USD",
+            "price": "Price on Request",
+            "itemCondition": "http://schema.org/NewCondition",
+            "availability": "http://schema.org/InStock"
+          }
+        })}
+      </script>
+    </>
+  )
+}
+
 export const query = graphql`
   query ($id: String) {
     markdownRemark(id: {eq: $id}) {
