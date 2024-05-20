@@ -30,8 +30,8 @@ The Yacht Charter App is an open-source project designed to facilitate yacht and
 
 1. Clone the repository:
 ```sh
-git clone https://github.com/your-username/yacht-charter-app.git
-cd yacht-charter-app
+git clone https://github.com/your-username/yacht-charter.git
+cd yacht-charter
 ```
 
 2. Install dependencies:
