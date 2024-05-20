@@ -29,24 +29,24 @@ The Yacht Charter App is an open-source project designed to facilitate yacht and
 ### Installation
 
 1. Clone the repository:
-   ```sh
-   git clone https://github.com/your-username/yacht-charter-app.git
-   cd yacht-charter-app
-  ```
+```sh
+git clone https://github.com/your-username/yacht-charter-app.git
+cd yacht-charter-app
+```
 
 2. Install dependencies:
-  ```sh
-   npm install
-   # or
-   yarn install
-  ```
+```sh
+  npm install
+  # or
+  yarn install
+```
 
 3. Start the development server:
-  ```sh
-   npm develop
-   # or
-   yarn develop
-  ```
+```sh
+  npm develop
+  # or
+  yarn develop
+```
 
 ## Usage
 
