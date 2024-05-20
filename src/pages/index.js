@@ -24,11 +24,16 @@ const IndexPage = ({ data }) => {
     })
   }
 
-  const shuffledNodes = shuffle(data.allMarkdownRemark.nodes);
+  const [shuffledNodes, setShuffledNodes] = React.useState([]);
 
   const [searchCategory, setSearchCategory] = React.useState("");
   const [searchGuestNum, setSearchGuestNum] = React.useState(null);
   const [searchCabinNum, setSearchCabinNum] = React.useState(null);
+
+  React.useEffect(() => {
+    const validData = (data.allMarkdownRemark.nodes).filter(node => node.frontmatter.slug !== 'sample');
+    setShuffledNodes(shuffle(validData));
+  }, []);
 
   const searchForYachts = () => {
     let queryParams = "";
@@ -185,11 +190,9 @@ export const query = graphql`
           cabins
           category
           crew
-          details
           guests
           slug
           length
-          price
           title
           thumbnail {
             absolutePath

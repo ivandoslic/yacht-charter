@@ -16,11 +16,9 @@ export default function Yachts() {
             cabins
             category
             crew
-            details
             guests
             slug
             length
-            price
             title
             thumbnail {
               absolutePath
@@ -99,7 +97,7 @@ export default function Yachts() {
         </div>
             {(() => {
                 const filteredNodes = data.allMarkdownRemark.nodes.filter(
-                    node => (node.frontmatter.category.localeCompare(activeCategory) === 0 || !activeCategory) && node.frontmatter.cabins >= numberOfCabins && node.frontmatter.guests >= numberOfGuests
+                    node => (node.frontmatter.category.localeCompare(activeCategory) === 0 || !activeCategory) && node.frontmatter.cabins >= numberOfCabins && node.frontmatter.guests >= numberOfGuests && node.frontmatter.slug !== "sample"
                 );
                 if (filteredNodes.length === 0) {
                     return <NoYachtsMessage />;

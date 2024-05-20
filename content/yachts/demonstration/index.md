@@ -1,30 +1,31 @@
 ---
-slug: demo-yacht
-name: Demonstration edit
-category: Demonstration
-thumbnail: yacht2.jpg
+slug: sample
+name: Sample
+category: Sample
+thumbnail: icon.png
 gallery:
-length: 13
-guests: 4
-cabins: 2
-crew: 3
+  - icon.png
+length: 0
+guests: 0
+cabins: 0
+crew: 0
 ---
 
 
-# Yacht Name: S/Y Ocean Voyager
+# Sample
 
 ## Overview
 
-Welcome aboard the luxurious S/Y Ocean Voyager! This magnificent yacht offers the ultimate sailing experience with its spacious cabins, top-notch amenities, and professional crew. Whether you're looking for a relaxing getaway or an adventurous journey, S/Y Ocean Voyager has everything you need for an unforgettable voyage.
+Lorem ipsum
 
 ### Features:
 
-* Length: 30 meters
-* Category: Luxury Motor Sail
-* Guests: Up to 10
-* Cabins: 5
-* Crew: 4
-* Built-in: 2022
+* Length: 0 meters
+* Category: Sample
+* Guests: Up to 0
+* Cabins: 0
+* Crew: 0
+* Built-in: 0
 
 ## Amenities
 
@@ -38,5 +39,5 @@ Welcome aboard the luxurious S/Y Ocean Voyager! This magnificent yacht offers th
 
 ## Pricing
 
-* Weekly Charter Rate: $25,000
-* Additional Fees may apply for optional services and activities.
+* Weekly Charter Rate: $0
+* No additional fees

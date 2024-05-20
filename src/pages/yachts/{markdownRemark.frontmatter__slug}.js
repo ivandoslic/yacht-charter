@@ -9,8 +9,6 @@ export default function YachtSite({ data, children }) {
   const yacht = data.markdownRemark.frontmatter;
   const description = data.markdownRemark.html;
 
-  console.log(data)
-
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const handlePrevImage = () => {
@@ -96,9 +94,7 @@ export const query = graphql`
         length
         crew
         category
-        details
         guests
-        price
         thumbnail {
           publicURL
         }
