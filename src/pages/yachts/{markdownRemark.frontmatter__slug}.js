@@ -112,7 +112,7 @@ export const Head = ({ data }) => {
             "highPrice": "30000.00",
             "itemCondition": "http://schema.org/NewCondition",
             "availability": "http://schema.org/InStock",
-            "priceValidUntil": `${Date().getFullYear()}-12-31`
+            "priceValidUntil": `${new Date().getFullYear()}-12-31`
           }
         })}
       </script>

@@ -4,9 +4,9 @@
 module.exports = {
   siteMetadata: {
     title: `Yacht Charter`,
-    siteUrl: `https://www.yourdomain.tld`
+    siteUrl: `https://croatiayachtvacation.com`
   },
-  plugins: ["gatsby-plugin-netlify-cms", "gatsby-transformer-remark", "gatsby-plugin-postcss", "gatsby-plugin-image", "gatsby-plugin-mdx", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
+  plugins: ["gatsby-plugin-netlify-cms", "gatsby-transformer-remark", "gatsby-plugin-postcss", "gatsby-plugin-image", "gatsby-plugin-mdx", "gatsby-plugin-sharp", "gatsby-transformer-sharp", "gatsby-plugin-sitemap", {
     resolve: 'gatsby-source-filesystem',
     options: {
       "name": "images",
