@@ -86,7 +86,6 @@ const IndexPage = ({ data }) => {
             <h2 className="text-3xl lg:text-5xl font-extrabold text-center mb-5">What are you looking for?</h2>
             <p className="text-lg text-center mb-5">We provide you with a lot of different categories of yachts and gulets. If you know what you need you can search for it here.</p>
             <Search
-              /* TODO: Implement functionality */
               onCategoryChange={(category) => setSearchCategory(category)}
               onSearchSubmit={searchForYachts}
               categoryState={searchCategory}
@@ -181,14 +180,13 @@ export const Head = () => (
     <meta property="og:title" content="Yacht and Gulet Charter Agency" />
     <meta property="og:description" content="Plan Your Journey offers the best yacht and gulet cruising experiences. Explore our 20 yachts, 120 destinations, and top-notch service." />
     <meta property="og:image" content={backgroundImage} />
-    {/*TODO: <meta property="og:url" content="https://yourwebsite.com" />*/}
-    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="og:url" content="https://croatiayachtvacation.com" />
     <script type="application/ld+json">
       {JSON.stringify({
         "@context": "http://schema.org",
         "@type": "Organization",
         "name": "Plan Your Journey",
-        "url": "https://www.planyourjourney.hr/",
+        "url": "https://www.croatiayachtvacation.com/",
         "logo": "https://www.planyourjourney.hr/images/plan-your-journey-logo-white.png",
         "sameAs": [
           "https://www.facebook.com/LetTheHolidayBegin/",

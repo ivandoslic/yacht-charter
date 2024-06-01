@@ -91,9 +91,8 @@ export const Head = ({ data }) => {
       <meta name="description" content={`Explore the luxurious ${yacht.name}, a ${yacht.length}m ${yacht.category} accommodating ${yacht.guests} guests with ${yacht.cabins} cabins and a crew of ${yacht.crew}.`} />
       <meta property="og:title" content={`${yacht.name} - Yacht Charter`} />
       <meta property="og:description" content={`Discover the luxurious ${yacht.name}, a perfect choice for your next yacht charter.`} />
-      <meta property="og:image" content={yacht.gallery[0].publicURL} />
-      {/*TODO: <meta property="og:url" content={`https://yourwebsite.com/yachts/${yacht.slug}`} /> */}
-      <meta name="twitter:card" content="summary_large_image" />
+      <meta property="og:image" content={"https://croatiayachtvacation.com" + yacht.gallery[0].publicURL} />
+      <meta property="og:url" content={`https://croatiayachtvacation.com/yachts/${yacht.slug}`} />
       <script type="application/ld+json">
         {JSON.stringify({
           "@context": "http://schema.org",
@@ -106,12 +105,14 @@ export const Head = ({ data }) => {
             "name": "Plan Your Journey"
           },
           "offers": {
-            "@type": "Offer",
-            // TODO: "url": `https://yourwebsite.com/yachts/${yacht.slug}`,
-            "priceCurrency": "USD",
-            "price": "Price on Request",
+            "@type": "AggregateOffer",
+            "url": `https://croatiayachtvacation.com/yachts/${yacht.slug}`,
+            "priceCurrency": "EUR",
+            "lowPrice": "15000.00",
+            "highPrice": "30000.00",
             "itemCondition": "http://schema.org/NewCondition",
-            "availability": "http://schema.org/InStock"
+            "availability": "http://schema.org/InStock",
+            "priceValidUntil": `${Date().getFullYear()}-12-31`
           }
         })}
       </script>

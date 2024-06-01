@@ -14,7 +14,7 @@ export default function StatsComponent() {
         <StatCard
             icon={<CursorArrowRaysIcon height={'25%'}/>}
             headerText='Easy and quick booking'
-            descriptionText='Booking with us is so simple you can do it in justa few clicks!'
+            descriptionText='Booking with us is so simple you can do it in just a few clicks!'
         />
 
         <StatCard

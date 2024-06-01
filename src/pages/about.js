@@ -32,15 +32,14 @@ export const Head = () => (
         <meta name="keywords" content="About Plan Your Journey, yacht charter, gulet charter, sailing vacations, luxury yachts" />
         <meta property="og:title" content="About Us - Plan Your Journey" />
         <meta property="og:description" content="Discover the story behind Plan Your Journey, our mission, and our dedication to providing unforgettable yacht and gulet cruising experiences." />
-        {/*TODO: <meta property="og:url" content="https://yourwebsite.com/about" />*/}
-        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="og:url" content="https://croatiayachtvacation.com/about" />
         <script type="application/ld+json">
         {JSON.stringify({
             "@context": "http://schema.org",
             "@type": "Organization",
             "name": "Plan Your Journey",
-            // TODO: "url": "https://yourwebsite.com",
-            // TODO: "logo": "https://yourwebsite.com/logo.png",
+            "url": "https://croatiayachtvacation.com",
+            "logo": "https://www.planyourjourney.hr/images/plan-your-journey-logo-white.png",
             "sameAs": [
                 "https://www.facebook.com/LetTheHolidayBegin/",
                 "https://www.instagram.com/planyour_journey/",

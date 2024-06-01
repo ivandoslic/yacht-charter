@@ -27,15 +27,14 @@ export const Head = () => (
     <meta name="keywords" content="Contact Plan Your Journey, yacht charter inquiries, gulet charter questions, sailing vacation questions" />
     <meta property="og:title" content="Contact Us - Plan Your Journey" />
     <meta property="og:description" content="Have a question or want to get in touch with Plan Your Journey? Fill out our contact form and we'll respond promptly." />
-    {/*<meta property="og:url" content="https://yourwebsite.com/contact" />*/}
-    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="og:url" content="https://yourwebsite.com/contact" />
     <script type="application/ld+json">
       {JSON.stringify({
         "@context": "http://schema.org",
         "@type": "ContactPage",
         "name": "Contact Us - Plan Your Journey",
         "description": "Get in touch with Plan Your Journey for any questions or inquiries about our yacht and gulet charters.",
-        // TODO: "url": "https://yourwebsite.com/contact",
+        "url": "https://croatiayachtvacation.com/contact",
         "contactOption": {
           "@type": "ContactOption",
           "contactType": "Customer Service",

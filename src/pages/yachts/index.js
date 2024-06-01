@@ -152,21 +152,20 @@ export const Head = () => {
       <meta name="keywords" content="yacht charter, gulet charter, luxury yachts, yacht cruising, Plan Your Journey" />
       <meta property="og:title" content="Our Yachts - Yacht and Gulet Charter" />
       <meta property="og:description" content="Discover the luxurious yachts and gulets available for charter at Plan Your Journey. Book your perfect yacht today." />
-      <meta property="og:image" content="https://yourwebsite.com/path-to-an-image.jpg" />
-      {/* TODO: <meta property="og:url" content="https://yourwebsite.com/yachts" /> */}
-      <meta name="twitter:card" content="summary_large_image" />
+      <meta property="og:image" content="https://croatiayachtvacation.com/static/home-background-6e08fa33376ede52c6c2a5108fa76a3d.jpg" />
+      <meta property="og:url" content="https://croatiayachtvacation.com/yachts" />
       <script type="application/ld+json">
         {JSON.stringify({
           "@context": "http://schema.org",
           "@type": "ItemList",
           "name": "Our Yachts",
           "description": "Browse our selection of luxurious yachts and gulets available for charter.",
-          // TODO: "url": "https://yourwebsite.com/yachts",
+          "url": "https://croatiayachtvacation.com/yachts",
           "numberOfItems": headData.allMarkdownRemark.nodes.length,
           "itemListElement": headData.allMarkdownRemark.nodes.map((node, index) => ({
             "@type": "ListItem",
             "position": index + 1,
-            "url": `https://yourwebsite.com/yachts/${node.frontmatter.slug}`,
+            "url": `https://croatiayachtvacation.com/yachts/${node.frontmatter.slug}`,
             "name": node.frontmatter.name
           }))
         })}
