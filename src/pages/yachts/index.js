@@ -5,7 +5,6 @@ import YachtCard from '../../components/YachtCard'
 import Search from '../../components/Search'
 import queryString from 'query-string'
 import NoYachtsMessage from '../../components/NoYachtsMessage'
-import { data } from 'autoprefixer'
 
 export default function Yachts() {
   const data = useStaticQuery(graphql`
@@ -26,6 +25,9 @@ export default function Yachts() {
               size
               publicURL
               relativePath
+              childImageSharp {
+                gatsbyImageData(width: 800, placeholder: BLURRED, formats: [AUTO, WEBP])
+              }
             }
           }
         }
@@ -105,7 +107,7 @@ export default function Yachts() {
                     return <NoYachtsMessage />;
                 } else {
                     return (
-                      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-6 lg:gap-8 mt-8">
+                      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-6 lg:gap-8 mt-8 px-10">
                       {
                         filteredNodes.map(node => (
                           <YachtCard key={node.frontmatter.name} node={node} />
@@ -138,6 +140,9 @@ export const Head = () => {
               size
               publicURL
               relativePath
+              childImageSharp {
+                gatsbyImageData(width: 800, placeholder: BLURRED, formats: [AUTO, WEBP])
+              }
             }
           }
         }

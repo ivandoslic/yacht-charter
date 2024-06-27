@@ -2,9 +2,7 @@ import * as React from "react"
 import Layout from "../components/layout"
 import Search from "../components/Search"
 import YachtCard from "../components/YachtCard"
-import backgroundImage from "../images/home-background.jpg"
-import ctaImage from "../images/ctaImage.jpg"
-import infoSectionImage from "../images/info-section.jpg"
+import backgroundImageSEO from "../images/home-background.jpg"
 import { ArrowDownCircleIcon } from "@heroicons/react/20/solid"
 import { graphql, Link, navigate } from "gatsby"
 import { shuffle } from 'lodash'
@@ -12,6 +10,7 @@ import StatsComponent from "../components/callToActionComponents/StatsComponent"
 import ContactInfoInput from "../components/callToActionComponents/ContactInfoInput"
 import CustomTableElement from "../components/callToActionComponents/CustomTableElement"
 import { CheckCircleIcon, FaceSmileIcon, HashtagIcon, MapPinIcon, UsersIcon } from "@heroicons/react/24/outline"
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
 const IndexPage = ({ data }) => {
   const scrollToNextSection = () => {
@@ -33,7 +32,11 @@ const IndexPage = ({ data }) => {
   React.useEffect(() => {
     const validData = (data.allMarkdownRemark.nodes).filter(node => node.frontmatter.slug !== 'sample');
     setShuffledNodes(shuffle(validData));
-  }, []);
+  }, [data.allMarkdownRemark.nodes]);
+
+  const backgroundImage = getImage(data.background.childImageSharp.gatsbyImageData);
+  const ctaImage = getImage(data.ctaImage.childImageSharp.gatsbyImageData);
+  const infoSectionImage = getImage(data.infoSectionImage.childImageSharp.gatsbyImageData);
 
   const searchForYachts = () => {
     let queryParams = "";
@@ -55,8 +58,8 @@ const IndexPage = ({ data }) => {
   return (
     <Layout alwaysDark={false}>
       <div class="w-full top-0 text-[#121212] pt-24 -mt-24" style={{height: "100vh", top: 0}}>
-        <img 
-          src={backgroundImage}
+        <GatsbyImage 
+          image={backgroundImage}
           alt="Photo by Zhanzat Mamytova: https://www.pexels.com/photo/white-speedboat-on-body-of-water-3071018/"
           style={{position: "absolute", top: 0, left: 0, zIndex: -1, width: "100%", height: "100%", objectFit: "cover"}}
           />
@@ -96,7 +99,7 @@ const IndexPage = ({ data }) => {
               setCabinsState={setSearchCabinNum}
             />
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-6 lg:gap-8 mt-8 pb-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-6 lg:gap-8 mt-8 pb-10 px-10">
             {
               shuffledNodes.slice(0, 6).map(node => (
                 <YachtCard key={node.frontmatter.name} node={node} />
@@ -106,8 +109,8 @@ const IndexPage = ({ data }) => {
           </div>
           <div className="w-full bg-[#121212] px-6 py-10 sm:pl-0">
             <div className="flex w-full flex-col sm:flex-row">
-              <img 
-                src={ctaImage}
+              <GatsbyImage 
+                image={ctaImage}
                 alt="Photo by ben o'bro: https://unsplash.com/@benobro?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
                 className="w-full p-4 sm:p-0 sm:w-5/12"
               />
@@ -155,8 +158,8 @@ const IndexPage = ({ data }) => {
                 </Link>
               </div>
               <div className="w-full flex flex-wrap justify-center sm:w-3/12 flex-1 p-6">
-                <img 
-                  src={infoSectionImage}
+                <GatsbyImage 
+                  image={infoSectionImage}
                   alt="Photo by ben o'bro: https://unsplash.com/@benobro?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
                   className="p-4 min-h-[40vh] max-h-[50vh] sm:p-0 rounded-md"
                 />
@@ -179,7 +182,7 @@ export const Head = () => (
     <meta name="keywords" content="Plan Your Journey, yacht charter, gulet charter, sailing vacation, luxury yacht, yacht cruise, charter agency, Greece, Turkey" />
     <meta property="og:title" content="Yacht and Gulet Charter Agency" />
     <meta property="og:description" content="Plan Your Journey offers the best yacht and gulet cruising experiences. Explore our 20 yachts, 120 destinations, and top-notch service." />
-    <meta property="og:image" content={backgroundImage} />
+    <meta property="og:image" content={backgroundImageSEO} />
     <meta property="og:url" content="https://croatiayachtvacation.com" />
     <script type="application/ld+json">
       {JSON.stringify({
@@ -221,8 +224,38 @@ export const query = graphql`
             size
             publicURL
             relativePath
+            childImageSharp {
+              gatsbyImageData(width: 800, placeholder: BLURRED, formats: [AUTO, WEBP])
+            }
           }
         }
+      }
+    }
+    background: file(relativePath: { eq: "home-background.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(
+          layout: FULL_WIDTH
+          placeholder: BLURRED
+          formats: [AUTO, WEBP]
+        )
+      }
+    }
+    ctaImage: file(relativePath: { eq: "ctaImage.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(
+          width: 800
+          placeholder: BLURRED
+          formats: [AUTO, WEBP]
+        )
+      }
+    }
+    infoSectionImage: file(relativePath: { eq: "info-section.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(
+          width: 800
+          placeholder: BLURRED
+          formats: [AUTO, WEBP]
+        )
       }
     }
   }
