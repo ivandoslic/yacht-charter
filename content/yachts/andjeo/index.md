@@ -25,3 +25,73 @@ Discover the beauty of the Adriatic while lounging on our big sunbathing area wi
 Don't miss out on the opportunity to sail aboard Andjeo, the most recommended and meticulously maintained Goolet on the Adriatic. Contact us now to reserve your spot and embark on the adventure of a lifetime!
 
 <!--EndFragment-->
+
+## Amenities
+
+<!--StartFragment-->
+
+*SPECIFICATION*
+
+* Year/renewed: 2000./ 2015.
+* Speed: 10/12 Knots
+* Flag: Croatian
+* LOA: 27 m
+* Beam: 6,15 m 
+* Draft: 2,70 m 
+* Fueltanks: 3.000 l
+* Watertanks: 7.000 l
+* Home port: Split, Croatia
+* Crew: 3 people
+
+*FEATURES*
+
+* 5 double bed cabins for up to 10 guests
+* Andjeo is completely renovated in 2014. and 2015.
+* Super comfortable bed mattresses
+* High-quality bed linen and covers
+* Spacious bathrooms
+* The most recommended gulet on Adriatic
+* The best professional crew service
+* Friendly atmosphere
+* Extra values added to each cruise
+* Outstanding meals
+* Lot of extras included in price
+* Amazing outdoor living areas
+* Big TV on stern deck
+* New hard top on stern deck for better sun protection
+* Spacious new cushioned lounge on stern deck
+* Big dining table with white rattan chairs on stern deck
+* Big sun bathing area with super comfortable and adjustable mattresses on bow deck
+* Variety of water sports
+* Board games
+* TV/LCD, DVD, music system
+* WiFi Internet, computer, printer
+
+*WATER SPORTS*
+
+* Tender 4.80 m, with 70 hp engine
+* Water ski (mono and double)
+* Inflatable kayak
+* Paddle board
+* Snorkeling equipment
+
+<!--EndFragment-->
+
+## Pricing
+
+<!--StartFragment-->
+
+Prices are in Euro (€) per week for the 2024 season.
+
+| May 1st – June 7th & September 7th – October 15th | June 8th – June 28th & August 17th – September 7th | July 6th – August 16th |
+| ------------------------------------------------- | -------------------------------------------------- | ---------------------- |
+| 19.800 €                                          | 22.000 €                                           | 24.200 €               |
+
+
+
+**EXTRAS:**
+
+* Food options: HB - 400 € person, FB - 800 € person
+* Beverages: All-inclusive package - 250 € person, Non-alcoholic package - 150 € person
+
+<!--EndFragment-->
