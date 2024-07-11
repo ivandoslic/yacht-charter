@@ -42,15 +42,60 @@ Four crew members (captain, chef, waiter and deckhand) will take care of every d
 
 ## Amenities
 
-| Feature         | Description                                                                                 |
-| --------------- | ------------------------------------------------------------------------------------------- |
-| Spacious Cabins | Luxuriously appointed cabins with en-suite bathrooms and ocean views.                       |
-| Gourmet Cuisine | Enjoy delicious meals prepared by our onboard chef using fresh, local ingredients.          |
-| Water Sports    | Dive into the crystal-clear waters and explore with our snorkeling and diving equipment.    |
-| Sun Deck        | Relax and soak up the sun on our spacious sun deck equipped with comfortable loungers.      |
-| Entertainment   | Stay entertained with our onboard entertainment system, including movies, music, and games. |
+<!--StartFragment-->
+
+*SPECIFICATION*
+
+* Length: 28,00 m
+* Beam: 6,80 m (22,30 ft)
+* Cruising speed: 9 knots
+* Berths: 12
+
+*YACHT FEATURES*
+
+* 6 spacious cabins for up to 12 guests (5 double bed cabins and 1 twin cabin)
+* Spacious salon
+* Bar is located on the deck
+* Cushioned dining area on the main deck with a large table
+* Cushioned sunbathing pad on the stern deck
+* Large sunbathing area on the bow deck
+* Spectacular cushioned sofa under Bimini with 2 tables on the bow deck
+* Outdoor barbecue
+* Internet Wi-Fi
+* Water sports
+* Tender
+
+*WATER SPORTS*
+
+* Stand-up paddle board
+* Kayak
+* Rubber donut
+* Snorkeling gear
+* Fishing equipment
+* E-Foil*
+* Power water sport equipment (wakeboard, adult skis, junior skis, tube)*\
+  *provided at an extra cost
+
+<!--EndFragment-->
 
 ## Pricing
 
-* Weekly Charter Rate: $25,000
-* No additional fees
+
+
+Prices are in Euro (€) per week for the 2024 season, VAT of 13% included.
+
+| Before May 27 & After September 9 | May 27 – June 10 & August 26 – September 9 | June 10 – August 26 |
+| --------------------------------- | ------------------------------------------ | ------------------- |
+| 20.000 €                          | 23.500 €                                   | 27.000 €            |
+
+
+
+**PAYMENT CONDITIONS:**
+
+* Deposit: 50 % of charter fee – upon confirmation of booking
+* Balance: 50 % of charter fee + Other costs - not later than 6 weeks before charter commencement
+
+**CHECK-IN: SATURDAY - 17:00h**\
+**CHECK-OUT: SATURDAY - 09:00h**
+
+<!--EndFragment-->
