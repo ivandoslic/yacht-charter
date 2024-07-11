@@ -3,6 +3,10 @@ slug: andjeo
 name: Andjeo
 category: gulet
 thumbnail: studio-ali-119-of-136-.jpg
+gallery:
+  - studio-ali-67-of-136-.jpg
+  - studio-ali-63-of-136-.jpg
+  - studio-ali-60-of-136-.jpg
 length: 27
 guests: 10
 cabins: 5
