@@ -1,32 +1,44 @@
 ---
 slug: sea-breeze
 name: Sea Breeze
-category: Gulet
-thumbnail: yacht4.jpg
+category: gulet
+thumbnail: 1-16-.jpg
 gallery:
-  - yacht4.jpg
-  - yacht5.jpg
-  - yacht6.jpg
-length: 30
-guests: 10
-cabins: 5
+  - 1-28-.jpg
+  - 1-17-.jpg
+  - 1-29-.jpg
+length: 28
+guests: 12
+cabins: 6
 crew: 4
 ---
-
 # Sea Breeze
 
 ## Overview
 
-Sea Breeze is a classic gulet, perfect for leisurely cruises along the coast with family and friends.
+Sea Breeze is a high-quality Gulet Yacht, 28 meters in length, built in 2018. It boasts modern and spacious cabins with expansive space for dining, sunbathing and relaxation on an expansive deck. She accommodates 12 guests in 5 Double Cabins and 1 Twin Cabin, each with a private ensuite. The interior of the yacht is fully air conditioned.
 
-### Features:
+There is a fully equipped kitchen, an indoor and outdoor dining area, and an air-conditioned salon. The sun deck maintains luxury sunbathing mats for all guests.
 
-* Length: 30 meters
-* Category: Gulet
-* Guests: Up to 10
-* Cabins: 5
-* Crew: 4
-* Built-in: 2015
+TV, USB and music system is provided in the salon, by the exterior dining table and in all cabins.
+
+All the cabins are air conditioned (with separate control in each cabin) and spacious, providing sufficient storage and natural light.
+
+The indoor salon is luxurious, providing two large couches, one around a dining table and the other surrounding a coffee table. The large windows provide panoramic views to ensure there is always plenty of sunlight.
+
+The salon is air conditioned and has an LED TV, USB and CD/DVD connections, and Internet connection via 4G+ entertainment.
+
+S/Y Sea Breeze provides guests with a spacious deck.
+
+On the stern deck, there is a large dining table with cushioned lounge seating and chairs. This area is shaded so guests can enjoy their meals with a panoramic view and be protected from the summer sun.
+
+The bow deck is designed to provide an expansive sunbathing area with luxury mattresses. Additionally, there is a large, cushioned sofa under the Bimini at the very front of the bow, which is ideal for enjoying views of the beauty of the Croatian landscape while cruising.
+
+Sea Breeze has plenty of entertainment options so that guests who have interest in outdoor activities have numerous possibilities during the cruise.
+
+Four crew members (captain, chef, waiter and deckhand) will take care of every detail during the cruise and are committed to providing extraordinary service.
+
+<!--EndFragment-->
 
 ## Amenities
 
