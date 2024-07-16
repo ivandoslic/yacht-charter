@@ -7,6 +7,16 @@ gallery:
   - 1-28-.jpg
   - 1-17-.jpg
   - 1-29-.jpg
+  - 1-20-.jpg
+  - 1-25-.jpg
+  - 1-31-.jpg
+  - 1-32-.jpg
+  - 1-34-.jpg
+  - 1-1-1.jpg
+  - 1-3-.jpg
+  - 1-8-.jpg
+  - 1-9-.jpg
+  - 1-22-.jpg
 length: 28
 guests: 12
 cabins: 6
