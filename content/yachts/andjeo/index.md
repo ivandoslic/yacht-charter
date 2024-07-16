@@ -7,6 +7,16 @@ gallery:
   - studio-ali-67-of-136-.jpg
   - studio-ali-63-of-136-.jpg
   - studio-ali-60-of-136-.jpg
+  - studio-ali-34-of-136-.jpg
+  - studio-ali-72-of-136-.jpg
+  - studio-ali-65-of-136-.jpg
+  - studio-ali-47-of-136-.jpg
+  - studio-ali-44-of-136-.jpg
+  - studio-ali-22-of-136-.jpg
+  - studio-ali-24-of-136-.jpg
+  - studio-ali-26-of-136-.jpg
+  - studio-ali-45-of-136-.jpg
+  - studio-ali-76-of-136-.jpg
 length: 27
 guests: 10
 cabins: 5
