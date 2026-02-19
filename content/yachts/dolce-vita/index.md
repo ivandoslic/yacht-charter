@@ -3,6 +3,23 @@ slug: dolce-vita
 name: Dolce Vita
 category: gulet
 thumbnail: dolcevita-50.jpg
+gallery:
+  - dolcevita-1.jpg
+  - dolcevita-2.jpg
+  - dolcevita-8.jpg
+  - dolcevita-12.jpg
+  - dolcevita-13.jpg
+  - dolcevita-16.jpg
+  - dolcevita-20.jpg
+  - dolcevita-23.jpg
+  - dolcevita-24.jpg
+  - dolcevita-28.jpg
+  - dolcevita-32.jpg
+  - dolcevita-34.jpg
+  - dolcevita-40.jpg
+  - dolcevita-42.jpg
+  - img_9375.jpeg
+  - img_9378.jpeg
 length: 34
 guests: 10
 cabins: 5
@@ -79,5 +96,49 @@ Gulet Dolce Vita has 5 premium cabins to accommodate 10 guests.
 ## Pricing
 
 <!--StartFragment-->
+
+Prices are in Euro (€) per week for the 2026 season, VAT of 13% included.
+
+| Before May 23 & After September 19 | May 23 – June 20 & August 29 – September 19 | June 20 – August 29 |
+| ---------------------------------- | ------------------------------------------- | ------------------- |
+| 33.500 €                           | 36.900 €                                    | 39.900 €            |
+
+
+
+**MANDATORY ADDITIONAL COSTS:**
+
+Food\
+Drinks/Beverages\
+Port fees\
+ \
+***INCLUDED IN THE PRICE:***
+
+Accomodation, crew, 4 h of sailing (navigation) per day, bed linening and towels, basic insurance of clients, crew and the boat, 4 / 6 / 12 h of generator working per day, VAT.
+
+***EXCLUDED FROM THE PRICE:***
+
+Food (HB or FB), beverages, mooring fees and port fees, extra sailing per day, national park tickets, transfers, water ski, jet ski, tips for the crew
+
+**FOOD - HB (HALF BOARD) AND FB (FULL BOARD) ARE PER PAX/WEEK.**
+
+* HB - breakfast and one meal - 590 Eur per person per week
+* Extra meal - 50 Eur per person
+
+**DRINKS/BEVERAGES OPTIONS:**
+
+* Must be taken at the yacht bar and paid according to consummation, in cash on the yacht.
+
+**FOOD DISCOUNT FOR CHILDREN:**
+
+* children 0-2 years free of charge
+* children 2-10 years 50% discount.
+
+**PAYMENT CONDITIONS:**
+
+* 50% ADVANCE PAYMENT - UPON RESERVATION
+* 50% BALANCE PAYMENT - 5 WEEKS BEFORE CRUISE PERIOD
+
+**CHECK-IN: SATURDAY - 17:00H**\
+**CHECK-OUT: SATURDAY - 09:00H**
 
 <!--EndFragment-->
