@@ -90,13 +90,15 @@ Four crew members (captain, chef, waiter and deckhand) will take care of every d
 
 ## Pricing
 
+Prices are in Euro (€) per week for the 2026 season, VAT of 13% included.
 
-
-Prices are in Euro (€) per week for the 2024 season, VAT of 13% included.
-
-| Before May 27 & After September 9 | May 27 – June 10 & August 26 – September 9 | June 10 – August 26 |
-| --------------------------------- | ------------------------------------------ | ------------------- |
-| 20.000 €                          | 23.500 €                                   | 27.000 €            |
+| Before May 16 \
+&\
+After September 12 | May 16 – June 13\
+&\
+August 29 – September 12 | June 13 – August 29 |
+| ------------------------------------- | --------------------------------------------- | ------------------- |
+| 23.000 €                              | 26.000 €                                      | 30.000 €            |
 
 
 
