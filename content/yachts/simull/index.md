@@ -81,12 +81,10 @@ Simull inherits the finest attributes of the Prestige yachts.Basically,this Pres
 
 Prices are in Euro (€) per week for the 2026 season, VAT of 13% included.
 
-| **Low season**\
-1.1. – 1.7. | **High season**\
-1.7 – 31.8. | **Late season**\
-31.8. – 31.12 |
-| --------------------------- | ---------------------------- | ------------------------------ |
-| 20.000 €                    | 23.000 €                     | 20.000 €                       |
+| **Low season** 1.1. – 1.7. | **High season** 1.7. – 31.8. | **Late season** 31.8. – 31.12. |
+| -------------------------- | ---------------------------- | ------------------------------ |
+| 20.000 €                   | 23.000 €                     | 20.000 €                       |
 
-\
+
+
 <!--EndFragment-->
