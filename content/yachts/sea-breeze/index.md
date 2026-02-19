@@ -83,8 +83,7 @@ Four crew members (captain, chef, waiter and deckhand) will take care of every d
 * Snorkeling gear
 * Fishing equipment
 * E-Foil*
-* Power water sport equipment (wakeboard, adult skis, junior skis, tube)*\
-  *provided at an extra cost
+* Power water sport equipment (wakeboard, adult skis, junior skis, tube)provided at an extra cost
 
 <!--EndFragment-->
 
@@ -92,13 +91,9 @@ Four crew members (captain, chef, waiter and deckhand) will take care of every d
 
 Prices are in Euro (€) per week for the 2026 season, VAT of 13% included.
 
-| Before May 16 \
-&\
-After September 12 | May 16 – June 13\
-&\
-August 29 – September 12 | June 13 – August 29 |
-| ------------------------------------- | --------------------------------------------- | ------------------- |
-| 23.000 €                              | 26.000 €                                      | 30.000 €            |
+| Before May 26 & After September 12 | May 16 – June 13 & August 29 – September 12 | June 13 – August 29 |
+| ---------------------------------- | ------------------------------------------- | ------------------- |
+| 23.000 €                           | 26.000 €                                    | 30.000 €            |
 
 
 
