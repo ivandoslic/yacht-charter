@@ -60,7 +60,7 @@ Simull inherits the finest attributes of the Prestige yachts.Basically,this Pres
 * 3 ensuite cabins for up to 6 guests
 * Luxury salon
 * Outdoor barbecue
-* Internet Wifi
+* Internet Wi-fi
 * Water toys
 * Tender
 
