@@ -3,6 +3,12 @@ slug: maia
 name: MAIA
 category: motorYacht
 thumbnail: maia_ext_004.jpg
+gallery:
+  - maia_02.jpg
+  - maia_04.jpg
+  - maia_05.jpg
+  - maia_06.jpg
+  - maia_07.jpg
 length: 53
 guests: 12
 cabins: 6
