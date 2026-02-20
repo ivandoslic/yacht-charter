@@ -1,5 +1,5 @@
 ---
-slug: seagull-ii
+slug: seagullii
 name: SEAGULL II
 category: motorYacht
 thumbnail: seagull-ii-358-final.jpg
