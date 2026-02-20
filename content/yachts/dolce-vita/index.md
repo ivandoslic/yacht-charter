@@ -1,6 +1,6 @@
 ---
 slug: dolce-vita
-name: Dolce Vita
+name: DOLCE VITA
 category: gulet
 thumbnail: dolcevita-50.jpg
 gallery:
