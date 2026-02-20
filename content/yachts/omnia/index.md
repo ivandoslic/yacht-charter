@@ -3,6 +3,9 @@ slug: omnia
 name: Omnia
 category: luxuryMotorSail
 thumbnail: 101-sailing-yacht-omnia.jpg
+gallery:
+  - 102-superyacht-omnia.jpg
+  - 103-luxury-yacht-omnia.jpg
 length: 46
 guests: 12
 cabins: 6
