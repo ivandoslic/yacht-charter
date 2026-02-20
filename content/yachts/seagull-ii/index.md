@@ -1,6 +1,6 @@
 ---
 slug: seagull-ii
-name: Seagull II
+name: SEAGULL II
 category: motorYacht
 thumbnail: seagull-ii-358-final.jpg
 length: 54
