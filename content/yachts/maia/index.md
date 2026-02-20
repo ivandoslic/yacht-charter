@@ -14,6 +14,8 @@ gallery:
   - maia_12.jpg
   - maia_13.jpg
   - maia_15.jpg
+  - maia_16.jpg
+  - maia_19.jpg
 length: 53
 guests: 12
 cabins: 6
