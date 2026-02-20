@@ -1,6 +1,6 @@
 ---
 slug: omnia
-name: Omnia
+name: OMNIA
 category: luxuryMotorSail
 thumbnail: 101-sailing-yacht-omnia.jpg
 gallery:
