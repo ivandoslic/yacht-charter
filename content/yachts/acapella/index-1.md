@@ -37,7 +37,7 @@ Acapella is the pride and joy of a very experienced owner who has already establ
 
 *SPECIFICATION*
 
-* Accommodates: 12 Guests in 5 Staterooms
+* Accommodates: 12 guests in 5 staterooms
 * Arrangements: 3 Master, 2 Double + Single bed
 * Length: 49.00 m
 * Beam: 8.50 m
@@ -76,8 +76,6 @@ Prices are in Euro (€) per week for the 2026 season, VAT excluded.
 | Before June 22 & After August 27 |  June 22 – August 27 |
 | -------------------------------- | -------------------- |
 | 88.000 €                         | 98.000 €             |
-
-
 
 \*The VAT percentage is calculated subsequently according to the specific itinerary and the country of execution.
 
