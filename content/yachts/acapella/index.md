@@ -16,6 +16,10 @@ gallery:
   - 25_acapella_master_mid.jpg
   - 28_acapella_master_mid.jpg
   - 30_acapella_master_bow.jpg
+  - 32_acapella_double-single.jpg
+  - 34_acapella_double-single.jpg
+  - 35_acapella_ext.jpg
+  - 48_acapella_ext.jpg
 length: 49
 guests: 12
 cabins: 5
