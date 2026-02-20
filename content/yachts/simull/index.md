@@ -1,6 +1,6 @@
 ---
 slug: simull
-name: Simull
+name: SIMULL
 category: motorYacht
 thumbnail: simull-running.jpeg
 gallery:
