@@ -1,6 +1,6 @@
 ---
 slug: sea-breeze
-name: Sea Breeze
+name: SEA BREEZE
 category: gulet
 thumbnail: 1-16-.jpg
 gallery:
