@@ -3,6 +3,15 @@ slug: acapella
 name: ACAPELLA
 category: luxuryMotorSail
 thumbnail: 02_acapella_air.jpg
+gallery:
+  - 09_acapella_air.jpg
+  - 09_acapella_fly.jpg
+  - 12_acapella_fly.jpg
+  - 15_acapella_aft.jpg
+  - 16_acapella_aft.jpg
+  - 18_acapella_aft.jpg
+  - 19_acapella_salon.jpg
+  - 21_acapella_salon.jpg
 length: 49
 guests: 12
 cabins: 5
