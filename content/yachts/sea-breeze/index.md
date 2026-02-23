@@ -22,7 +22,7 @@ guests: 12
 cabins: 6
 crew: 4
 ---
-# Sea Breeze
+# SEA BREEZE
 
 ## Overview
 
@@ -94,8 +94,6 @@ Prices are in Euro (€) per week for the 2026 season, VAT of 13% included.
 | Before May 26 & After September 12 | May 16 – June 13 & August 29 – September 12 | June 13 – August 29 |
 | ---------------------------------- | ------------------------------------------- | ------------------- |
 | 23.000 €                           | 26.000 €                                    | 30.000 €            |
-
-
 
 **PAYMENT CONDITIONS:**
 
