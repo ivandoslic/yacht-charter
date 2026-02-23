@@ -25,7 +25,7 @@ guests: 10
 cabins: 5
 crew: 5
 ---
-# Dolce Vita
+# DOLCE VITA
 
 ## Overview
 
@@ -102,8 +102,6 @@ Prices are in Euro (€) per week for the 2026 season, VAT of 13% included.
 | Before May 23 & After September 19 | May 23 – June 20 & August 29 – September 19 | June 20 – August 29 |
 | ---------------------------------- | ------------------------------------------- | ------------------- |
 | 33.500 €                           | 36.900 €                                    | 39.900 €            |
-
-
 
 **MANDATORY ADDITIONAL COSTS:**
 
