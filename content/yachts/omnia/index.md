@@ -11,7 +11,7 @@ guests: 12
 cabins: 6
 crew: 10
 ---
-# Omnia
+# OMNIA
 
 ## Overview
 
@@ -73,8 +73,6 @@ Prices are in Euro (€) per week for the 2026 season, VAT of 13% not included.
 | Before June 21 & After August 31 | July 21 – August 31 |
 | -------------------------------- | ------------------- |
 | 110.000 €                        | 130.000 €           |
-
-
 
 **CHARTER FEE includes:** Accommodation for a maximum of 12 guests in 6 cabins, the crew of 10 and their expenses, insurance of the yacht, use of recreational equipment, tourist taxes, and Wi-Fi.
 
