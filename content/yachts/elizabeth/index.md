@@ -20,11 +20,7 @@ More entertaining space is found up on the flybridge, where a dining and sun pad
 
 This brand-new Princess Y72 will be the only one of its kind available for charter in Croatia and Montenegro from summer 2022 onwards. She runs with an experienced crew of 3.
 
-<﻿!--EndFragment-->
-
 ## A﻿menities
-
-<﻿!--StartFragment-->
 
 *SPECIFICATION*
 
@@ -58,13 +54,9 @@ This brand-new Princess Y72 will be the only one of its kind available for chart
 * 2x Towables (donut, banana)
 * Snorkelling gear
 
-<﻿!--EndFragment-->
-
 ## P﻿ricing
 
-<﻿!--StartFragment-->
-
- Prices are in Euro (€) per week for the 2026 season, VAT of 13% not included.
+Prices are in Euro (€) per week for the 2026 season, VAT of 13% not included.
 
 | B﻿efore June & After September |  June & September |   July – August |
 | ------------------------------ | ----------------- | --------------- |
@@ -73,5 +65,3 @@ This brand-new Princess Y72 will be the only one of its kind available for chart
 **CHARTER RATE includes:** Yacht accommodation, yacht’s laundry, basic operating consumables, crew service, tender, water sports equipment.
 
 **CHARTER RATE does not include:** Food and beverages for the charter guests, fuel for the yacht and tender/water toys, berthing fees, customs charges, guest laundry, communications, shore-side electricity and water, onshore transfers (paid out of APA), VAT, delivery/re-delivery fee (if any), crew gratuity.
-
-<﻿!--EndFragment-->
