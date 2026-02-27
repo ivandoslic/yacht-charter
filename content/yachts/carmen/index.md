@@ -18,11 +18,7 @@ Expansive decks are a haven for sports enthusiasts, offering activities like bas
 
 Crafted by Aegean Yachts and scheduled for launch in January 2025, she will be ready to welcome her first guests in the Summer 2025 season.
 
-<﻿!--EndFragment-->
-
 ## A﻿menities
-
-<﻿!--StartFragment-->
 
 *SPECIFICATION*
 
@@ -65,11 +61,7 @@ Crafted by Aegean Yachts and scheduled for launch in January 2025, she will be r
 * 1x Cornhole game
 * Basic Gym Equipment (Yoga mats, Resistance bands, Dumbbells)
 
-<﻿!--EndFragment-->
-
 ## Pricing
-
-<﻿!--StartFragment-->
 
 Prices are in Euro (€) per week for the 2026 season, VAT of 13% not included.
 
@@ -80,5 +72,3 @@ Prices are in Euro (€) per week for the 2026 season, VAT of 13% not included.
 **CHARTER RATE includes:** Yacht accommodation, yacht’s laundry, basic operating consumables, crew service, tender, water sports equipment.
 
 **CHARTER RATE does not include:** Food and beverages for the charter guests, fuel for the yacht and tender/water toys, berthing fees, customs charges, guest laundry, communications, shore-side electricity and water, onshore transfers (paid out of APA), VAT, delivery/re-delivery fee (if any), crew gratuity.
-
-<﻿!--EndFragment-->
