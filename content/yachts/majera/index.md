@@ -22,11 +22,7 @@ The clever features just keep coming, with a tender garage that transforms into 
 
 Running with four experienced crew member and available for charter in Croatia, Majera offers the best of both worlds.
 
-<﻿!--EndFragment-->
-
 ## A﻿menities
-
-<﻿!--StartFragment-->
 
 *SPECIFICATION*
 
@@ -57,11 +53,7 @@ Running with four experienced crew member and available for charter in Croatia, 
 * 1x Jobe towable for 2 Pax
 * 1x iAqua sea scooter
 
-<﻿!--EndFragment-->
-
 ## P﻿ricing
-
-<﻿!--StartFragment-->
 
 Prices are in Euro (€) per week for the 2026 season, VAT of 13% not included.
 
@@ -72,5 +64,3 @@ Prices are in Euro (€) per week for the 2026 season, VAT of 13% not included.
 **CHARTER RATE includes:** Yacht accommodation, yacht’s laundry, basic operating consumables, crew service, tender, water sports equipment.
 
 **CHARTER RATE does not include:** Food and beverages for the charter guests, fuel for the yacht and tender/water toys, berthing fees, customs charges, guest laundry, communications, shore-side electricity and water, onshore transfers (paid out of APA), VAT, delivery/re-delivery fee (if any), crew gratuity.
-
-<﻿!--EndFragment-->
