@@ -20,11 +20,7 @@ Unwind and soak in the breathtaking scenery on IVA's expansive outdoor areas. En
 
 Designed with both aesthetics and functionality in mind, IVA effortlessly combines elegance with comfort cruising. Spanning just over 29 meters in length, with stabilizers both on anchor and underway, and reaching maximum speed of 30 knots, she is the ideal choice for leisurely island hopping throughout the Adriatic Sea. With MY IVA as your luxurious home away from home, every moment of your Adriatic escape will be extraordinary.
 
-<﻿!--EndFragment-->
-
 ## A﻿menities
-
-<﻿!--StartFragment-->
 
 *SPECIFICATION*
 
@@ -55,11 +51,7 @@ Designed with both aesthetics and functionality in mind, IVA effortlessly combin
 * 1x Inflatable Kayak
 * Snorkeling and fishing equipment
 
-<﻿!--EndFragment-->
-
 ## P﻿ricing
-
-<﻿!--StartFragment-->
 
 Prices are in Euro (€) per week for the 2026 season, VAT of 13% not included.
 
@@ -70,5 +62,3 @@ Prices are in Euro (€) per week for the 2026 season, VAT of 13% not included.
 **CHARTER RATE includes:** Yacht accommodation, yacht’s laundry, basic operating consumables, crew service, tender, water sports equipment.
 
 **CHARTER RATE does not include:** Food and beverages for the charter guests, fuel for the yacht and tender/water toys, berthing fees, customs charges, guest laundry, communications, shore-side electricity and water, onshore transfers (paid out of APA), VAT, delivery/re-delivery fee (if any), crew gratuity.
-
-<﻿!--EndFragment-->
