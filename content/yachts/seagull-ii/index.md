@@ -12,8 +12,6 @@ crew: 8
 
 ## O﻿verview
 
-<﻿!--StartFragment-->
-
 Step aboard the Seagull II, a luxurious 54-meter motor yacht that seamlessly blends classic elegance with modern comforts. Originally built in 1952 by Uljanik Shipyard and extensively refitted in 2019, this stunning vessel embodies a unique vintage charm while offering state-of-the-art amenities.
 
 With a beam of 8.48 meters and a draft of 2.4 meters, Seagull II provides both spacious interiors and a stable cruising experience. She navigates effortlessly at a cruising speed of 12 knots, reaching a maximum speed of 14 knots, ensuring smooth and comfortable voyages.
@@ -25,11 +23,7 @@ The yacht is serviced by a dedicated crew of nine, ensuring an unparalleled leve
 
 Whether you seek a sophisticated retreat or an unforgettable adventure, Seagull II offers a timeless and elegant charter experience, making every voyage truly exceptional.
 
-<﻿!--EndFragment-->
-
 ## A﻿menities
-
-<﻿!--StartFragment-->
 
 *SPECIFICATION*
 
@@ -54,18 +48,10 @@ Whether you seek a sophisticated retreat or an unforgettable adventure, Seagull 
 * Soft Gym Equipment
 * Water toys
 
-<﻿!--EndFragment-->
-
 ## P﻿ricing
-
-<﻿!--StartFragment-->
 
 Prices are in Euro (€) per week for the 2026 season, VAT of 13% and APA of 25% not included.
 
 | B﻿efore July 1 & After August 31 | July 1 - August 31 |
 | -------------------------------- | ------------------ |
 | 85.000 €                         | 95.000 €           |
-
-
-
-<﻿!--EndFragment-->
