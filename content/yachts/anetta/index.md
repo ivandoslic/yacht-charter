@@ -20,11 +20,7 @@ Anetta stands out with a seawater pool on the aft deck, seamlessly connected to 
 
 Ensuring a seamless and unforgettable voyage, Anetta is manned by a professional crew of 8, ready to cater to your every need.
 
-<﻿!--EndFragment-->
-
 ## A﻿menities
-
-<﻿!--StartFragment-->
 
 *SPECIFICATION*
 
@@ -68,8 +64,6 @@ Ensuring a seamless and unforgettable voyage, Anetta is manned by a professional
 * Donut
 * Waterski
 * Waterboard
-
-<﻿!--EndFragment-->
 
 ## P﻿ricing
 
