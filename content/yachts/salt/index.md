@@ -18,11 +18,7 @@ Impeccably maintained and boasting a modern and timeless design, SALT is ideally
 
 Featuring a cruising speed of 27 knots, this yacht is the perfect choice for effortlessly navigating Croatia's islands during your island-hopping visits. With SALT as your private retreat, every moment of your Adriatic adventure promises to be extraordinary. Welcome aboard!
 
-<﻿!--EndFragment-->
-
 ## A﻿menities
-
-<﻿!--StartFragment-->
 
 *SPECIFICATION*
 
@@ -57,11 +53,7 @@ Featuring a cruising speed of 27 knots, this yacht is the perfect choice for eff
 * Fishing Equipment 
 * Snorkelling Sets
 
-<﻿!--EndFragment-->
-
 ## P﻿rices
-
-<﻿!--StartFragment-->
 
 Prices are in Euro (€) per week for the 2026 season, VAT of 13% not included
 
@@ -72,5 +64,3 @@ Prices are in Euro (€) per week for the 2026 season, VAT of 13% not included
 **CHARTER RATE includes:** Yacht accommodation, yacht’s laundry, basic operating consumables, crew service, tender, water sports equipment.
 
 **CHARTER RATE does not include:** Food and beverages for the charter guests, fuel for the yacht and tender/water toys, berthing fees, customs charges, guest laundry, communications, shore-side electricity and water, onshore transfers (paid out of APA), VAT, delivery/re-delivery fee (if any), crew gratuity.
-
-<﻿!--EndFragment-->
