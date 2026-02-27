@@ -18,11 +18,7 @@ Indulge in the spacious split-level master stateroom, perfect for ultimate relax
 
 Navigate the Adriatic in style with the Sunseeker 95 QUANTUM's impressive top speed of 25 knots. Unveil the vibrant underwater world with illuminating night cruises, or utilize the 9-meter luxury tender to discover hidden coves and secluded beaches. A local, professional crew of 4 ensures an exceptional yachting experience, making your Croatia adventure truly unforgettable.
 
-<﻿!--EndFragment-->
-
 ## A﻿menities
-
-<﻿!--StartFragment-->
 
 *SPECIFICATION*
 
@@ -56,11 +52,7 @@ Navigate the Adriatic in style with the Sunseeker 95 QUANTUM's impressive top sp
 * 1X Jobe Tribal Towable for 2 pax
 * Snorkeling equipment 
 
-<﻿!--EndFragment-->
-
 ## P﻿ricing
-
-<﻿!--StartFragment-->
 
 Prices are in Euro (€) per week for the 2026 season, VAT of 13% not included.
 
@@ -68,10 +60,6 @@ Prices are in Euro (€) per week for the 2026 season, VAT of 13% not included.
 | --------------------------- | -------------- |
 | 70.000 €                    | 80.000 €       |
 
-
-
 **CHARTER RATE includes:** Yacht accommodation, yacht’s laundry, basic operating consumables, crew service, tender, water sports equipment.
 
 **CHARTER RATE does not include:** Food and beverages for the charter guests, fuel for the yacht and tender/water toys, berthing fees, customs charges, guest laundry, communications, shore-side electricity and water, onshore transfers (paid out of APA), VAT, delivery/re-delivery fee (if any), crew gratuity.
-
-<﻿!--EndFragment-->
