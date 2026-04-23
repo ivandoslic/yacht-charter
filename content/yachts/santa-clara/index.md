@@ -8,7 +8,11 @@ guests: 8
 cabins: 4
 crew: 4
 ---
-### Yacht details
+# SANTA CLARA
+
+## Overview
+
+<!--StartFragment-->
 
  The yacht Santa Clara is a refined 27-meter motor sailer that perfectly blends contemporary luxury with the charm of traditional cruising. Built in 2023, she offers a sophisticated yet relaxed setting for discovering the Adriatic in style, combining spacious outdoor living with elegant interiors.
 
@@ -19,3 +23,41 @@ Inside, Santa Clara features a warm and modern salon, designed as a welcoming sp
 A professional crew of four is dedicated to delivering a seamless and personalized charter experience, taking care of every detail – from tailored itineraries to exceptional onboard service.
 
 Whether you’re seeking peaceful anchorages, vibrant island towns, or an active holiday on the water with a variety of water toys, Santa Clara offers the perfect balance of comfort, style, and authentic yachting experience in the Mediterranean.
+
+## Amenities
+
+*SPECIFICATION*
+
+* Production: Nuić Nautika
+* Model: Custom built
+* Built: 2023
+* Flag: Croatian
+* Cruise speed: 9 knots
+* Length: 28m
+* Beam: 7m
+* Draft: 2.80m
+* Fuel consupmtion: 40 l/h
+* Guests: 8
+* Cabins: 4
+* Crew: 4
+* Home port: Split
+
+*WATER SPORTS*
+
+* 6m Highfield tender with Yamaha 70HP
+* Jet ski Seadoo
+* Sea bob
+* Water Skis
+* Ringo ride
+* 2x SUP
+* 2x kayak
+
+<!--EndFragment-->
+
+## Pricing
+
+Prices are in Euro (€) per week for the 2026 season, VAT of 13% and APA of 30% not included.
+
+| B﻿efore July & After August |  July & August |
+| --------------------------- | -------------- |
+| 36.900 €                    | 42.900         |
